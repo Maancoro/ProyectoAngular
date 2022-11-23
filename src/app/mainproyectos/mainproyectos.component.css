@@ -1,0 +1,29 @@
+/* ---------MAIN--------- */
+.main .trabajos {
+    overflow: visible;
+    padding: 60px 0;
+}
+.main .mis-trabajos {
+    text-align: center;
+}
+.main .mis-trabajos .texto {
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+
+}
+.main .mis-trabajos .texto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+.main .mis-trabajos .texto .bold {
+    color: #14837f;
+
+}

@@ -1,0 +1,28 @@
+    /* Botones  Dashboard*/
+    .nav-pills {
+        --bs-nav-pills-link-active-bg :#14837f;
+    }  
+    .nav-link {
+        color:#000 !important;
+      
+    }
+    .form-control {
+        color:#14837f;
+        border:1px solid #14837f;
+    }
+    
+    .btn-dark {
+        --bs-btn-bg:#14837f;
+        --bs-btn-hover-border-color:#49C199;
+        --bs-btn-active-bg:#49C199;
+        --bs-btn-hover-bg:#14837f;
+        --bs-btn-border-color:#14837f;
+        --bs-btn-active-shadow:#49C199;
+        --bs-btn-focus-shadow-rgb: #49C199;
+    }
+    
+    .btn{
+    --bs-btn-color:#fff;
+    
+    }
+       

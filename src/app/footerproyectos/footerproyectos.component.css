@@ -1,0 +1,107 @@
+/* ---- ---- Footer---- ---- */
+
+.contacto {
+    padding: 60px 0;
+}
+h3.titulo {
+    font-size: 46px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #14837f;
+    text-align: center;
+
+}
+footer .contacto .formulario {     /*-- Aqui puedo usar Flexbox porque es el contenedor padre*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     /*- Con space-beetween nos permite separar el espacio del formulario (entre cada elemento)*/
+
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+    border: 3px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+   border: 3px solid #14837f !important;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+footer .contacto .formulario textarea{
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;    /*alto minimo*/
+    max-height: 300px;   /* alto maximo */ 
+    margin-bottom: 15px;   /*es la separacion entre el textarea y el boton enviar*/
+}
+ footer .contacto .formulario .boton {
+    margin: auto;
+    background: #14837f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+ }
+ footer .contacto .formulario .boton:hover {
+    background: #49C199;
+ }
+ footer .redes-sociales {
+    background:#14837f;
+    padding: 60px 0;
+ }
+ footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+ }
+
+footer .redes-sociales a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display:block ;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 25px;
+    margin: 0 10px;
+  }
+  footer .redes-sociales .twitter:hover {
+        background: #1da1f2;
+  }
+  footer .redes-sociales .facebook:hover {
+        background: #1877f2;
+  }
+  footer .redes-sociales .instagram:hover {
+        background: #e1306c;
+  }
+  footer .redes-sociales .github:hover {
+        background: #6cc644;
+  }
+  footer .redes-sociales .linkedin:hover {
+        background: #0077b5;
+  }
+  footer .redes-sociales .user-look:hover {
+        background: #ffd8be;
+  }
+  .error{
+    color:red
+  }
+  
+  .border-danger{
+    border-color: red;
+  }

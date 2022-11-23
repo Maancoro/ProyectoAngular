@@ -1,0 +1,14 @@
+.navbar.navbar-expand-lg.bg-dark{
+    background-color: #14837f  !important;
+}
+
+/*Boton de LoginFooter */
+.btn-primary{
+    --bs-btn-bg: #14837f ; 
+    --bs-btn-active-bg: #49C199;
+    --bs-btn-hover-bg: #49C199;
+    --bs-btn-focus-shadow-rgb: #49C199;
+    --bs-btn-border-color: #49C199;
+    --bs-btn-hover-border-color:#49C199;
+
+}

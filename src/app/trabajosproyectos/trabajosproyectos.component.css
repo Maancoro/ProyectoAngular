@@ -1,0 +1,93 @@
+.trabajos {
+    overflow: visible;
+    padding: 60px 0;
+}
+.mis-trabajos {
+    text-align: center;
+}
+.mis-trabajos .texto {
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+
+}
+p.categoria {
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 14px;
+}
+
+
+.mis-trabajos .texto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+.mis-trabajos .texto .bold {
+    color: #14837f;
+
+}
+.trabajos {
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+ .trabajos .contenedor {
+    overflow: hidden;
+}
+.trabajos .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #14837f;
+    text-align: center;
+
+}
+ .contenedor-trabajos {   /*Aqui trabaje con Flexbox*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .contenedor-trabajos .trabajo  {  /* Aqui le digo que cada foto ocupe un 23% */
+   width: 23%; 
+   margin-bottom: 40px;
+}
+.contenedor-trabajos .trabajo .thumb {
+    width: 100%;
+   
+}
+ .contenedor-trabajos .trabajo .thumb:hover {
+     border: 1px solid #fff;
+       opacity:1;
+}
+.contenedor-trabajos .trabajo .thumb img {   /* aqui le digo a las fotos que ocupen el 100% osea el 23% dado anteriormente */
+    width: 100%;
+    vertical-align: top;
+    border-radius: 2px;
+
+}
+ .contenedor-trabajos .trabajo .descripcion {
+    text-align: center;
+}
+.contenedor-trabajos .trabajo .descripcion .nombre {
+    font-weight: 700;
+    color: #14837f;
+    margin-bottom: 10px;
+}
+ .contenedor-trabajos .trabajo .descripcion .categoria {
+    font-size: 14px;
+    color: #636363;
+}
+a{
+    color:#14837f;
+}
