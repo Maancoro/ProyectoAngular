@@ -13,9 +13,7 @@ export class DatosService {
 // El primer http se llama ALIAS
   constructor(private http:HttpClient) { }
 
-
-
-  //Metodo Observable que devuelve datos
+    //Metodo Observable que devuelve datos
     getDatos():Observable<any>{
     //retorno de datos utilizando el método get ed HttpClient que llama a la base de datos JSON o a una URL
     return this.http.get('./assets/db/datos.json');
