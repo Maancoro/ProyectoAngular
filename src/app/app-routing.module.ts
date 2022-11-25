@@ -6,10 +6,9 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
 
 const routes: Routes = [
-  { path:'index',component:IndexComponent},
+  { path:'',component:IndexComponent},
   { path:'proyectos',component:ProyectosComponent},
   { path:'dashboard',component: DashboardComponent},
-  { path: '', redirectTo: '/index', pathMatch: 'full'},
   {path:'**',component:Pagina404Component}
 
 ];

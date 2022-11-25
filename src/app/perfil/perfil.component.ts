@@ -7,8 +7,10 @@ import { DatosService } from '../servicios/datos.service';
   styleUrls: ['./perfil.component.css']
 })
 export class PerfilComponent implements OnInit {
- //Crear variable de instancia para almacenar los datos con los que trata el Servicio
-  infoPortfolio: any;
+ //inicializar variable de instancia para almacenar los datos con los que trata el Servicio
+  nombre: string = '';
+  apellido: string = '';
+  profesion: string = '';
 
   constructor(
     //Inyectar el servicio para tener acceso en la clase a los Metodos
@@ -17,9 +19,11 @@ export class PerfilComponent implements OnInit {
   ngOnInit(): void {
     //Esto es almacenar en la variable de instancia los datos recuperados por el servicio?
     this.datosService.getDatos().subscribe(data =>{
-     console.log(data);
-     this.infoPortfolio=data.nombre;
+    console.log(data);
+     //Definit informacion a mostrat
+     this.nombre=data.nombre;
+     this.apellido=data.apellido;
+     this.profesion=data.profesion;
     });
   }
-
 }
