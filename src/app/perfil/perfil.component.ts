@@ -12,6 +12,7 @@ export class PerfilComponent implements OnInit {
   apellido: string = '';
   profesion: string = '';
 
+
   constructor(
     //Inyectar el servicio para tener acceso en la clase a los Metodos
     private datosService: DatosService ) { }

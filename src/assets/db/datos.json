@@ -2,7 +2,7 @@
      {
       "nombre":"Ma.Angélica ",
       "apellido":"Correa Rosas",
-      "imagen": "../assets/img/yo.jpg",
+      "imagen": "assets/img/yo.jpg",
       "profesion":"Programadora Full Stack Web Jr",
       "acerca de mi":"Hola soy chilena, madre de 4 hijos,comence a estudiar despues que mi ultimo hijo se independizo, comence estudiando reparacion y armado de pc y me encanto, de a poco me fui adentrando en desarrollo de paginas web y conoci la programacion y me gusto mucho mucho mas.",
 
