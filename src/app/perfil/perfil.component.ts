@@ -18,12 +18,12 @@ export class PerfilComponent implements OnInit {
 
   ngOnInit(): void {
     //Esto es almacenar en la variable de instancia los datos recuperados por el servicio?
-    this.datosService.getDatos().subscribe(data =>{
-    console.log(data);
+    this.datosService.getDatos().subscribe(datos =>{
+    console.log(datos);
      //Definit informacion a mostrat
-     this.nombre=data.nombre;
-     this.apellido=data.apellido;
-     this.profesion=data.profesion;
+     this.nombre=datos.nombre;
+     this.apellido=datos.apellido;
+     this.profesion=datos.profesion;
     });
   }
 }
