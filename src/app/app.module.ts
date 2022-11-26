@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule}from '@angular/common/http';
 
-import { DatosService  } from './servicios/datos.service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -102,7 +102,7 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     HttpClientModule
 
   ],
-  providers: [DatosService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
