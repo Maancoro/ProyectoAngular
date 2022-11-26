@@ -2,9 +2,9 @@
      {
       "nombre":"Ma.Angélica ",
       "apellido":"Correa Rosas",
-      "imagen": "assets/img/yo.jpg",
+      "imagen": "./assets/img/yo.jpg",
       "profesion":"Programadora Full Stack Web Jr",
-      "acerca de mi":"Hola soy chilena, madre de 4 hijos,comence a estudiar despues que mi ultimo hijo se independizo, comence estudiando reparacion y armado de pc y me encanto, de a poco me fui adentrando en desarrollo de paginas web y conoci la programacion y me gusto mucho mucho mas.",
+      "acerca de mi":"Hola soy Chilena, madre de 4 hijos,vivo en la ciudad de La Plata, comence a estudiar después que mi último hijo se independizo. Comence estudiando Reparación, Armado y Mantenimiento de PC y me encanto, de a poco me fui adentrando en Desarrollo de Paginas web y conoci la Programación y me gusto mucho mucho mas. Después tuve la suerte de que me otorgaran la Beca en Argentina Programa",
 
      
 
@@ -108,33 +108,33 @@
         "habilidades":[ 
       {
         "id":1,
-        "habilidad":"html",
+        "habilidad":"HTML",
         "porcentaje":70
        
     },
     {
        "id":2,
-        "habilidad":"css",
+        "habilidad":"CSS",
         "porcentaje":65
     },
     {
       "id":3,
-        "habilidad":"sass",
+        "habilidad":"SASS",
         "porcentaje":80
     },
     {
       "id":4,
-        "habilidad":"javascript",
+        "habilidad":"JavaScript",
         "porcentaje":60
     },
     {
       "id":5,
-        "habilidad":"flexbox",
+        "habilidad":"Flexbox",
         "porcentaje":70
     },
     {
       "id":6,
-        "habilidad":"bootstrap",
+        "habilidad":"Bootstrap",
         "porcentaje":70
     }
 

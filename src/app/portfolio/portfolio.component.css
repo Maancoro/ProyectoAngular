@@ -59,6 +59,8 @@ a.btn.btn-primary{
     --bs-btn-disabled-border-color: #49C199;
     --bs-btn-active-border-color:#49C199 !important;
     --bs-btn-focus-shadow-:#14837f;
+    --bs-btn-color: #49c199;
+    
    }
 .btn-dark{
     --bs-btn-bg: #14837f !important;
@@ -71,5 +73,7 @@ a.btn.btn-primary{
     --bs-btn-focus-shadow:#49C199;
     --bs-btn-active-shadow: #49C199; 
     --bs-btn-box-shadow: #49C199;
+    --bs-btn-color: #49c199;
     
+
 }
