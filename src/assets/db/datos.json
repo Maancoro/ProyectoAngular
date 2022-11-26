@@ -1,164 +1,182 @@
 
      {
-        "nombre":"Ma.Angélica ",
-        "apellido":"Correa Rosas",
-        "imagen": "../assets/img/yo.jpg",
-        "profesion":"Programadora Full Stack Web Jr",
+      "nombre":"Ma.Angélica ",
+      "apellido":"Correa Rosas",
+      "imagen": "../assets/img/yo.jpg",
+      "profesion":"Programadora Full Stack Web Jr",
+      "acerca de mi":"Hola soy chilena, madre de 4 hijos,comence a estudiar despues que mi ultimo hijo se independizo, comence estudiando reparacion y armado de pc y me encanto, de a poco me fui adentrando en desarrollo de paginas web y conoci la programacion y me gusto mucho mucho mas.",
 
-           "navbar":[ 
-      {
-         "id":1,
-          "logoAp":"../assets/img/APLogo.png",
-          "link":"https://www.instagram.com/"
-      },
+     
+
+      "infoBasica":[
         {
-          "id":2,
-          "red":"github",
-          "link":"https://github.com/"
-         
-      },
-      {
-         "id":3,
-          "red":"linkedin",
-          "link":"https://linkedin.com"
-      },
-      {
-        "id":4,
-          "red":"instagram",
-          "link":"https://www.instagram.com/"
-      },
-      {
-        "id":5,
-          "red":"facebook",
-          "link":"https://www.facebook.com/"
+        "edad":60,
+        "email":"correa_angelica@hotmail.com",
+        "telefono":2216080880,
+        "ciudad":"La Plata",
+        "pais":"Argentina",
+        "idioma":"Inglés I, Español"
       }
-   
       ],
-
-          "carrusel":[ 
+      "navbar":[ 
+    {
+       "id":1,
+        "logoAp":"../assets/img/APLogo.png",
+        "link":"https://www.instagram.com/"
+    },
       {
-         "id":1,
-          "fondo1":"../assets/img/fondo1.jpg"
-          
-      },
-        {
-          "id":2,
-          "fondo2":"../assets/img/fondo2.jpg"
-          
-         
-      },
-      {
-         "id":3,
-          "fondo3":"../assets/img/fondo3.jpg"
-         
-      }
-    ],
-        
-           "estudios":[
-            {
-              "id": 1,
-              "institucion":"Liceo Nº 20  Santiago - Chile ",
-              "titulo":"Educación Secundaria. Modalidad Humanística Científica",
-              "inicio": "10-03-1994",
-              "fin":"12-12-1997",
-              "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
-            },
-            {
-              "id": 2,
-              "institucion": "UNLP",
-              "titulo":"Diplomatura EPSS",
-              "inicio": "10-03-2019",
-              "fin":"20-12-2019",
-              "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
-            },
-         
-            {
-              "id": 3,
-              "institucion": "Escuela Universitaria de Oficios UNLP",
-              "titulo":"Armado, Reparación y Mantenimiento de PC nivel I y II",
-              "inicio": "10-03-2019",
-              "fin":"20-12-2019",
-              "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
-            },
-    
-            {
-              "id": 4,
-              "institucion": "UMUPLA  Centro de Formación Profesional",
-              "titulo":"Curso de Diseño Web",
-              "inicio": "10-03-2019",
-              "fin":"30-12-2019",
-              "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
-            }
-    
-       ],
-
-          "habilidades":[ 
-        {
-          "id":1,
-          "lenguaje":"html",
-          "porcentaje":70
-         
-      },
-      {
-         "id":2,
-          "lenguaje":"css",
-          "porcentaje":65
-      },
-      {
-        "id":3,
-          "lenguaje":"sass",
-          "porcentaje":80
-      },
-      {
-        "id":4,
-          "lenguaje":"javascript",
-          "porcentaje":60
-      },
-      {
-        "id":5,
-          "lenguaje":"flexbox",
-          "porcentaje":70
-      },
-      {
-        "id":6,
-          "lenguaje":"bootstrap",
-          "porcentaje":70
-      }
-
-      ],
-          "experiencias":[
-            {
-              "id":1,
-              "empresa":"UTE Gasoducto Lincoln Viamontes ",
-              "inicio":"1999",
-              "fin":"2002",
-              "cargo":"Encargada de Personal",
-              "descripcion":"Tenia que entrevistar a los distintos postulantes, enviarlo a hacerse preocupacionales y hacerlos firmar contrato laboral. Me preocupaba de pagar sus sueldos. Pagaba a todos los proveedores del Obrador una vez al mes (Estaciones de Servicio, Librerias, Casa de Comidas, tienda de Ropa de trabajo etc)  "
-
-            },
-             {
-              "id":2,
-              "empresa":"AFJP Maxima",
-              "inicio":"2002",
-              "fin":"2008",
-              "cargo":"Promotora",
-              "descripcion":"Afiliaciones y Traspaso, LoremIpsu"
-
-            },
-             {
-              "id":3,
-              "empresa":"Cooperativa de Trabajo barrios Productores Ltda",
-              "inicio":"2014",
-              "fin":"Presente",
-              "cargo":"Administrativa",
-              "descripcion":"Encargada de Altas a Obras Sociales y tramites en Anses"
-
-            }
-            
-          ]
-          
-          
-
+        "id":2,
+        "red":"github",
+        "link":"https://github.com/"
+       
+    },
+    {
+       "id":3,
+        "red":"linkedin",
+        "link":"https://linkedin.com"
+    },
+    {
+      "id":4,
+        "red":"instagram",
+        "link":"https://www.instagram.com/"
+    },
+    {
+      "id":5,
+        "red":"facebook",
+        "link":"https://www.facebook.com/"
     }
+ 
+    ],
+
+        "carrusel":[ 
+    {
+       "id":1,
+        "fondo1":"../assets/img/fondo1.jpg"
+        
+    },
+      {
+        "id":2,
+        "fondo2":"../assets/img/fondo2.jpg"
+        
+       
+    },
+    {
+       "id":3,
+        "fondo3":"../assets/img/fondo3.jpg"
+       
+    }
+  ],
+      
+         "estudios":[
+          {
+            "id": 1,
+            "institucion":"Liceo Nº 20  Santiago - Chile ",
+            "titulo":"Educación Secundaria. Modalidad Humanística Científica",
+            "inicio": "10-03-1994",
+            "fin":"12-12-1997",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
+          },
+          {
+            "id": 2,
+            "institucion": "UNLP",
+            "titulo":"Diplomatura EPSS",
+            "inicio": "10-03-2019",
+            "fin":"20-12-2019",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
+          },
+       
+          {
+            "id": 3,
+            "institucion": "Escuela Universitaria de Oficios UNLP",
+            "titulo":"Armado, Reparación y Mantenimiento de PC nivel I y II",
+            "inicio": "10-03-2019",
+            "fin":"20-12-2019",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
+          },
+  
+          {
+            "id": 4,
+            "institucion": "UMUPLA  Centro de Formación Profesional",
+            "titulo":"Curso de Diseño Web",
+            "inicio": "10-03-2019",
+            "fin":"30-12-2019",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
+          }
+  
+     ],
+
+        "habilidades":[ 
+      {
+        "id":1,
+        "habilidad":"html",
+        "porcentaje":70
+       
+    },
+    {
+       "id":2,
+        "habilidad":"css",
+        "porcentaje":65
+    },
+    {
+      "id":3,
+        "habilidad":"sass",
+        "porcentaje":80
+    },
+    {
+      "id":4,
+        "habilidad":"javascript",
+        "porcentaje":60
+    },
+    {
+      "id":5,
+        "habilidad":"flexbox",
+        "porcentaje":70
+    },
+    {
+      "id":6,
+        "habilidad":"bootstrap",
+        "porcentaje":70
+    }
+
+    ],
+        "experiencias":[
+          {
+            "id":1,
+            "empresa":"UTE Gasoducto Lincoln Viamontes ",
+            "inicio":"1999",
+            "fin":"2002",
+            "cargo":"Encargada de Personal",
+            "descripcion":"Tenia que entrevistar a los distintos postulantes, enviarlo a hacerse preocupacionales y hacerlos firmar contrato laboral. Me preocupaba de pagar sus sueldos. Pagaba a todos los proveedores del Obrador una vez al mes (Estaciones de Servicio, Librerias, Casa de Comidas, tienda de Ropa de trabajo etc)  "
+
+          },
+           {
+            "id":2,
+            "empresa":"AFJP Maxima",
+            "inicio":"2002",
+            "fin":"2008",
+            "cargo":"Promotora",
+            "descripcion":"Afiliaciones y Traspaso, LoremIpsu"
+
+          },
+           {
+            "id":3,
+            "empresa":"Cooperativa de Trabajo barrios Productores Ltda",
+            "inicio":"2014",
+            "fin":"Presente",
+            "cargo":"Administrativa",
+            "descripcion":"Encargada de Altas a Obras Sociales y tramites en Anses"
+
+          }
+          
+        ],
+        "footer":
+          {
+            "copyright":"&#169; 2022 Portfolio - Angélica Correa"
+          }
+        
+
+  }
+  
+
     
  
