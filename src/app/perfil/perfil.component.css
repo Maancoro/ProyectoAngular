@@ -30,18 +30,34 @@
  }
  @media screen and (max-width:800px){
      
-  section.perfil h4{
+   h4{
       font-size: 1rem;
      
      }
      
  }
- 
+ @media screen and (max-width:800px){
+     
+    h5{
+       font-size: 1rem;
+      
+      }
+      
+  }
  @media screen and (max-width:500px){
      
-  section.perfil h4{
+   h4{
       font-size: 1rem;
      }
+ 
      
  }
+ @media screen and (max-width:500px){
+     
+    h5{
+        font-size: 1rem;
+       }
+   
+       
+   }
  

@@ -4,44 +4,39 @@
       "apellido":"Correa Rosas",
       "imagen": "./assets/img/yo.jpg",
       "profesion":"Programadora Full Stack Web Jr",
-      "acerca de mi":"Hola soy Chilena, madre de 4 hijos,vivo en la ciudad de La Plata, comence a estudiar después que mi último hijo se independizo. Comence estudiando Reparación, Armado y Mantenimiento de PC y me encanto, de a poco me fui adentrando en Desarrollo de Paginas web y conoci la Programación y me gusto mucho mucho mas. Después tuve la suerte de que me otorgaran la Beca en Argentina Programa",
-
-     
-
-      "infoBasica":[
-        {
-        "edad":60,
-        "email":"correa_angelica@hotmail.com",
-        "telefono":2216080880,
-        "ciudad":"La Plata",
-        "pais":"Argentina",
-        "idioma":"Inglés I, Español"
-      }
-      ],
-      "navbar":[ 
-    {
-       "id":1,
-        "logoAp":"../assets/img/APLogo.png",
-        "link":"https://www.instagram.com/"
-    },
+      "acerca":"Soy Chilena, madre de 4 hijos,vivo en la ciudad de La Plata, comence a estudiar después que mi último hijo se independizo. Comence estudiando Reparación, Armado y Mantenimiento de PC y me encanto, de a poco me fui adentrando en Desarrollo de Paginas web y conoci la Programación y me gusto mucho mucho mas. Después tuve la suerte de que me otorgaran la Beca en Argentina Programa",
+      "edad":60,
+      "email":"correa_angelica@hotmail.com",
+      "telefono":2216080880,
+      "ciudad":"La Plata",
+      "pais":"Argentina",
+      "idioma":"Inglés I, Español",
+      "copyright":" 2022 Portfolio - Angélica Correa",
+      "logoAp":"../assets/img/APLogo.png",
+      "logoInti":"assets/img/LogosInti.png",
+         
+      
+      
+      "redes":[ 
+   
       {
-        "id":2,
+        "id":1,
         "red":"github",
         "link":"https://github.com/"
        
     },
     {
-       "id":3,
+       "id":2,
         "red":"linkedin",
         "link":"https://linkedin.com"
     },
     {
-      "id":4,
+      "id":3,
         "red":"instagram",
         "link":"https://www.instagram.com/"
     },
     {
-      "id":5,
+      "id":4,
         "red":"facebook",
         "link":"https://www.facebook.com/"
     }
@@ -51,18 +46,18 @@
         "carrusel":[ 
     {
        "id":1,
-        "fondo1":"../assets/img/fondo1.jpg"
+        "fondo":"../assets/img/fondo1.jpg"
         
     },
       {
         "id":2,
-        "fondo2":"../assets/img/fondo2.jpg"
+        "fondo":"../assets/img/fondo2.jpg"
         
        
     },
     {
        "id":3,
-        "fondo3":"../assets/img/fondo3.jpg"
+        "fondo":"../assets/img/fondo3.jpg"
        
     }
   ],
@@ -70,14 +65,22 @@
          "estudios":[
           {
             "id": 1,
-            "institucion":"Liceo Nº 20  Santiago - Chile ",
-            "titulo":"Educación Secundaria. Modalidad Humanística Científica",
-            "inicio": "10-03-1994",
-            "fin":"12-12-1997",
+            "institucion": "UMUPLA  Centro de Formación Profesional",
+            "titulo":"Curso de Diseño Web",
+            "inicio": "10-03-2019",
+            "fin":"30-12-2019",
             "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
           },
           {
-            "id": 2,
+            "id":2 ,
+            "institucion": "Escuela Universitaria de Oficios UNLP",
+            "titulo":"Armado, Reparación y Mantenimiento de PC nivel I y II",
+            "inicio": "10-03-2019",
+            "fin":"20-12-2019",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
+          },
+          {
+            "id": 3,
             "institucion": "UNLP",
             "titulo":"Diplomatura EPSS",
             "inicio": "10-03-2019",
@@ -86,29 +89,19 @@
           },
        
           {
-            "id": 3,
-            "institucion": "Escuela Universitaria de Oficios UNLP",
-            "titulo":"Armado, Reparación y Mantenimiento de PC nivel I y II",
-            "inicio": "10-03-2019",
-            "fin":"20-12-2019",
-            "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
-          },
-  
-          {
             "id": 4,
-            "institucion": "UMUPLA  Centro de Formación Profesional",
-            "titulo":"Curso de Diseño Web",
-            "inicio": "10-03-2019",
-            "fin":"30-12-2019",
+            "institucion":"Liceo Nº 20  Santiago - Chile ",
+            "titulo":"Educación Secundaria. Modalidad Humanística Científica",
+            "inicio": "10-03-1994",
+            "fin":"12-12-1997",
             "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!"
           }
-  
-     ],
+        ],
 
         "habilidades":[ 
       {
         "id":1,
-        "habilidad":"HTML",
+        "habilidad1":"HTML",
         "porcentaje":70
        
     },
@@ -141,24 +134,6 @@
     ],
         "experiencias":[
           {
-            "id":1,
-            "empresa":"UTE Gasoducto Lincoln Viamontes ",
-            "inicio":"1999",
-            "fin":"2002",
-            "cargo":"Encargada de Personal",
-            "descripcion":"Tenia que entrevistar a los distintos postulantes, enviarlo a hacerse preocupacionales y hacerlos firmar contrato laboral. Me preocupaba de pagar sus sueldos. Pagaba a todos los proveedores del Obrador una vez al mes (Estaciones de Servicio, Librerias, Casa de Comidas, tienda de Ropa de trabajo etc)  "
-
-          },
-           {
-            "id":2,
-            "empresa":"AFJP Maxima",
-            "inicio":"2002",
-            "fin":"2008",
-            "cargo":"Promotora",
-            "descripcion":"Afiliaciones y Traspaso, LoremIpsu"
-
-          },
-           {
             "id":3,
             "empresa":"Cooperativa de Trabajo barrios Productores Ltda",
             "inicio":"2014",
@@ -166,16 +141,32 @@
             "cargo":"Administrativa",
             "descripcion":"Encargada de Altas a Obras Sociales y tramites en Anses"
 
+          },
+         
+           {
+            "id":2,
+            "empresa":"AFJP Maxima",
+            "inicio":"2002",
+            "fin":"2008",
+            "cargo":"Promotora",
+            "descripcion":"Afiliaciones y Traspaso, "
+
+          },
+           
+          {
+            "id":3,
+            "empresa":"UTE Gasoducto Lincoln Viamontes ",
+            "inicio":"1999",
+            "fin":"2002",
+            "cargo":"Encargada de Personal",
+            "descripcion":"Tenia que entrevistar a los distintos postulantes, enviarlo a hacerse preocupacionales y hacerlos firmar contrato laboral. Me preocupaba de pagar sus sueldos. Pagaba a todos los proveedores del Obrador una vez al mes (Estaciones de Servicio, Librerias, Casa de Comidas, tienda de Ropa de trabajo etc)  "
+
           }
           
-        ],
-        "footer":
-          {
-            "copyright":"&#169; 2022 Portfolio - Angélica Correa"
-          }
-        
+        ]
+      }
 
-  }
+      
   
 
     

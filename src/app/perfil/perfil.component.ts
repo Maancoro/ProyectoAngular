@@ -11,6 +11,7 @@ export class PerfilComponent implements OnInit {
   nombre: string = '';
   apellido: string = '';
   profesion: string = '';
+  imagen: string = '';
 
 
   constructor(
@@ -21,10 +22,11 @@ export class PerfilComponent implements OnInit {
     //Esto es almacenar en la variable de instancia los datos recuperados por el servicio?
     this.datosService.getDatos().subscribe(datos =>{
     console.log(datos);
-     //Definit informacion a mostrat
+     //Definit informacion a mostrar
      this.nombre=datos.nombre;
      this.apellido=datos.apellido;
      this.profesion=datos.profesion;
+     this.imagen=datos.imagen;
     });
   }
 }

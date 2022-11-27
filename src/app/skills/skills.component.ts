@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosService } from '../servicios/datos.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+// Esto es para traer distintos datos
+habilidades: any = []
 
-  constructor() { }
+  constructor(private datos: DatosService ) { }
 
   ngOnInit(): void {
+    this.datos.getDatos().subscribe(datos =>{
+    this.habilidades= datos.habilidades;
+     })
+
   }
 
 }

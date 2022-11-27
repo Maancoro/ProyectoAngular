@@ -6,74 +6,29 @@
        <a name="experiencia-laboral"></a> <!--ANCLA-->
        <h3><strong>Experiencia Laboral</strong></h3>
     </div>
-    <div class="card">
+    <div class="card" *ngFor="let experiencia of experiencias">
        <div class="row">
           <div class="col-md-3 " data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
              <div class="card-body experiencia">
              
                 <div>
-                   <h5 align="center"><b>Cooperativa de Trabajo Barrios Productores Ltda</b></h5>
+                   <h5 align="center"><b>{{experiencia.empresa}}</b></h5>
                    <br>
-                   <p align="center"><b>2014 - Presente</b></p>
+                   <p align="center"><b>{{experiencia.inicio}} - {{experiencia.fin}}</b></p>
                 </div>
              </div>
           </div>
           <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
              <div class="card-body">
-                <p><b>Administrativa /Encargada de Altas a Obras Sociales y tramites en Anses</b></p>
+                <p><b>{{experiencia.cargo}}</b></p>
                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dignissimos quia quos dicta, dolores saepe? Doloribus, aliquid quibusdam omnis asperiores illo quae voluptatem, sint iusto nemo, voluptates voluptatum similique. Earum. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!</p>
+                <p>{{experiencia.descripcion}} - Lorem ipsum dolor sit amet consectetur adipisicing . Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt !</p>
              </div>
           </div>
        </div>
     </div>
     <br>
-    <div class="card">
-       <div class="row">
-          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body experiencia">
-                
-                <div >
-                   <h5 align="center"><b>AFJP</b></h5>
-                   <h5 align="center"><b> Maxima</b></h5>
-                   <br>
-                   <p align="center"><b>2002-2008</b></p>
-                </div>
-             </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body">
-                <p><b>Afiliaciones y Traspasos</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dignissimos quia quos dicta, dolores saepe? Doloribus, aliquid quibusdam omnis asperiores illo quae voluptatem, sint iusto nemo, voluptates voluptatum similique. Earum. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!</p>
-             </div>
-          </div>
-       </div>
-    </div>
-    <br>
-    <div class="card">
-       <div class="row">
-          <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body experiencia">
-                
-                   <h5 align="center"><b>UTE</b></h5>
-                   <h5 align="center"><b>Gasoducto Lincoln-Viamontes</b></h5>
-                   <br>
-                   <p align="center"><b>1999-2002</b></p>
-                <div >
-                </div>
-             </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body">
-                <p><b>Encargada de Personal</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dignissimos quia quos dicta, dolores saepe? Doloribus, aliquid quibusdam omnis asperiores illo quae voluptatem, sint iusto nemo, voluptates voluptatum similique. Earum. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!</p>
-             </div>
-          </div>
-       </div>
-      </div>
+    
     </div>
    </div>
  </section>

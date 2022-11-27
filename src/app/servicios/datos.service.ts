@@ -19,6 +19,5 @@ export class DatosService {
     return this.http.get('./assets/db/datos.json');
     //acá podria poner un callback para ver la opción de problema de conexión del servidor
   }
-
-
 }
+ 

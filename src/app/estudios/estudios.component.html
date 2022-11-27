@@ -1,94 +1,31 @@
 <!--Espacio para mis Estudios-->
  <section id="educacion" class="educacion">
-    <div class="section">
+  <div class="section">
     <div class="container estudios">
     <div class=" text-center mb-4 title">
        <h3><strong>Educacion</strong></h3>
        <a name="#educacion"></a>  <!--ANCLA-->
-    </div>
-    <div class="card">
-       <div class="row">
+   </div>
+   <br>
+    <div class="card"*ngFor="let estudio of estudios">
+       <div class="row" >
           <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
              <div class="card-body experiencia">
-                
                 <div >
-                   <h5 align="center"><b>UMUPLA</b></h5>
-                   <h5 align="center"><b>Centro de Formación Profesional </b></h5>
-                   <p align="center"><b>2020-2021</b></p>
+                  <h5 align="center"><b>{{estudio.institucion}}</b></h5>
+                  <p align="center"><b>{{estudio.inicio }} - {{estudio.fin}} </b></p>
                 </div>
              </div>
           </div>
           <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
              <div class="card-body">
-                <p><b>Curso de Diseño Web</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!</p>
-             </div>
-          </div>
-       </div>
-    </div>
-    <br>
-    <div class="card">
-       <div class="row">
-          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body experiencia">
-                
-                <div>
-                   <h5 align="center"><b>Escuela Universitaria de Oficios UNLP</b></h5>
-                   <p align="center"><b>2019-2020</b></p>
-                </div>
-             </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body">
-                <p><b>Armado, Reparación y Mantenimiento de PC nivel I y II</b></p>
-                <p><b>Tecnica en reparaciones y mantenimiento de Pc</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!</p>
-             </div>
-          </div>
-       </div>
-    </div>
-    <br>
-    <div class="card">
-       <div class="row">
-          <div class="col-md-3 " data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body experiencia">
-                
-                <div >
-                   <h5 align="center"><b>UNLP</b></h5>
-                   <h5 align="center"><b>Diplomatura EPSS</b></h5>
-                   <p align="center"><b>2019</b></p>
-                </div>
-             </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body">
-                <p> <b>Diplomatura Universitaria en Promoción y Gestión de la Economía Popular, Social y Solidaria. UNLP</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!</p>
-             </div>
-          </div>
-       </div>
-    </div>
-    <br>
-    <div class="card">
-       <div class="row">
-          <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body experiencia">
-               
-                <div >
-                   <h5 align="center"><b>Liceo Nº 20</b></h5>
-                   <h5 align="center"><b>Santiago - Chile</b></h5>
-                   <p align="center"><b>1994-1997</b></p>
-                </div>
-             </div>
-          </div>
-          <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-             <div class="card-body">
-                <p><b>Educación Secundaria. Modalidad Humanística Científica. Santiago, Chile.</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint minus dolor culpa rerum. Eaque cum illo assumenda nihil incidunt? Tempore modi quaerat qui fugiat consectetur eum, aspernatur sint doloribus!</p>
+                <p><b>{{estudio.titulo}} </b></p>
+                <p>{{estudio.descripcion}}</p>
              </div>
           </div>
        </div>
     </div>
     </div>
-    </div>
+    </div><br>
  </section>
+ <br>
