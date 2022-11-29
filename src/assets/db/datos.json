@@ -101,7 +101,7 @@
         "habilidades":[ 
       {
         "id":1,
-        "habilidad1":"HTML",
+        "habilidad":"HTML",
         "porcentaje":70
        
     },

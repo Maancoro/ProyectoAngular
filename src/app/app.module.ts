@@ -47,6 +47,7 @@ import { ProyectosrealizadosdashboardComponent } from './modalesdashboard/proyec
 import { FormulariocontactodashboardComponent } from './modalesdashboard/formulariocontactodashboard/formulariocontactodashboard.component';
 import { SaludoproyectosdashboardComponent } from './modalesdashboard/saludoproyectosdashboard/saludoproyectosdashboard.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
+import { FormulariocontactoComponent } from './formulariocontacto/formulariocontacto.component';
 
 
 
@@ -94,6 +95,7 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     FormulariocontactodashboardComponent,
     SaludoproyectosdashboardComponent,
     Pagina404Component,
+    FormulariocontactoComponent,
   
   ],
   imports: [

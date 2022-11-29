@@ -1,0 +1,61 @@
+/*  Formulario de contacto*/
+.contacto {
+    padding: 60px 0;
+}
+.contacto .titulo {
+     font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #14837f;
+    text-align: center;
+
+}
+.contacto .formulario {     /*-- Aqui puedo usar Flexbox porque es el contenedor padre*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     /*- Con space-beetween nos permite separar el espacio del formulario (entre cada elemento)*/
+
+}
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"],
+.contacto .formulario textarea {
+    border: 3px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+.contacto .formulario input[type="text"]:focus,
+.contacto .formulario input[type="email"]:focus,
+.contacto .formulario textarea:focus {
+   border: 3px solid #14837f !important;
+}
+
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+.contacto .formulario textarea{
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;    /*alto minimo*/
+    max-height: 300px;   /* alto maximo */ 
+    margin-bottom: 15px;   /*es la separacion entre el textarea y el boton enviar*/
+}
+.contacto .formulario .boton {
+    margin: auto;
+    background: #14837f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+ }
+ .contacto .formulario .boton:hover {
+    background: #49C199;
+ }

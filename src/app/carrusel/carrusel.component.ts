@@ -8,14 +8,14 @@ import { DatosService } from '../servicios/datos.service';
 })
 export class CarruselComponent implements OnInit {
  //inicializar variable de instancia para almacenar los datos con los que trata el Servicio
-  carrusel: any = []
+  carrusel: any ;
   
 
   constructor(private datos: DatosService) { }
 
   ngOnInit(): void {
     this.datos.getDatos().subscribe(datos =>{
-      this.carrusel = datos.carrusel;
+      this.carrusel = datos.fondo;
      })
      
 
