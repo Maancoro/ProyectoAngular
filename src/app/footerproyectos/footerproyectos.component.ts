@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosService } from '../servicios/datos.service';
 
 @Component({
   selector: 'app-footerproyectos',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footerproyectos.component.css']
 })
 export class FooterproyectosComponent implements OnInit {
-
-  constructor() { }
+ // Esto es para traer distintos datos 
+redes: any = []
+  constructor(private datos: DatosService) { }
 
   ngOnInit(): void {
-  }
+    this.datos.getDatos().subscribe(datos =>{
+      this.redes = datos.redes;
+      })
 
+}
 }

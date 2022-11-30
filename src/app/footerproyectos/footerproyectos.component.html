@@ -1,10 +1,7 @@
 <footer>
     <section class="redes-sociales">
-          <div class="contenedor">
-             <a class="facebook" href="https://www.facebook.com/"target="_blank"><i class="fa-brands fa-facebook"></i></a>
-             <a class="instagram" href="https://www.instagram.com/"target="-blank"><i class="fa-brands fa-instagram"></i></a>
-             <a class="linkedin" href="https://ar.linkedin.com/"target="-blank"><i class="fa-brands fa-linkedin"></i></a>
-             <a class="github" href="https://github.com/"target="-blank"><i class="fa-brands fa-github"></i></a>
-         </div>
+          <div class="contenedor"  >
+             <a class="facebook"*ngFor="let red of redes" [href]="red.url"target="_blank"><i [ngClass]="red.logo"></i></a>
+          </div>
        </section>
 </footer>

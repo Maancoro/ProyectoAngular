@@ -3,149 +3,18 @@
     <div class="contenedor">
        <h3 class="titulo">Proyectos</h3>
         <div class="contenedor-trabajos">
-          <div class="trabajo">
+          <div class="trabajo"*ngFor="let proyecto of proyectos">
              <div class="thumb">
-                <img src="assets/img/foto 1.jpg"alt="Alma de Gaucho">
+                <img [src]="proyecto.imagen" alt="Alma de Gaucho">
              </div>
              <div class="descripcion">
-                <p class="nombre"><a href="https://www.instagram.com/almadegauchos/?igshid=YmMyMTA2M2Y%3D"target="-blank">Alma de Gaucho</a></p>
+                <p class="nombre"><a href="https://www.instagram.com/almadegauchos/?igshid=YmMyMTA2M2Y%3D"target="-blank">{{proyecto.nombreCliente}}</a></p>
                 <p class="categoria">
-                   Productos Regionales Argentinos - Para Adultos y Niños - 
-                   Envios Nacionales e Internacionales
+                   {{proyecto.descripcion}}
                 </p>
              </div>
           </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto2.jpg"alt="Alma de Gaucho">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">Alma de Gaucho</p>
-                <p class="categoria">
-                  Productos Regionales Argentinos - Para Adultos y Niños - 
-                  Envios Nacionales e Internacionales
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto3.jpg"alt="Alma de Gaucho">
-             </div>
-             
-             <div class="descripcion">
-               <p class="nombre">Alma de Gaucho</p>
-                <p class="categoria">
-                  Productos Regionales Argentinos - Para Adultos y Niños -
-                   Envios Nacionales e Internacionales
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto4.png"alt="Alma de Gaucho">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">Alma de Gaucho</p>
-                <p class="categoria">
-                   Productos Regionales Argentinos - Para Adultos y Niños - 
-                   Envios Nacionales e Internacionales
-                </p>
-             </div>
-          </div>
-
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto5.jpg"alt="Café Literario">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">Café Literario</p>
-                <p class="categoria">
-                   Amar tomar un Café y 
-                   Amar leer un Libro 
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto6.jpg"alt="Café Literario">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">Café Literario</p>
-                <p class="categoria">
-                  Amar tomar un Café y 
-                  Amar leer un Libro 
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto7.jpg"alt="Café Literario">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">Café Literario</p>
-                <p class="categoria">
-                  Amar tomar un Café y 
-                  Amar leer un Libro 
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto8.jpg"alt="Café Literario">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">Café Literario</p>
-                <p class="categoria">
-                   Amar tomar un Café y 
-                   Amar leer un Libro 
-                </p>
-             </div>
-          </div>
-
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto9.jpg"alt="PlazaVirtual">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">Plaza Virtual</p>
-                <p class="categoria">
-                   Feria de Artesanos y Manualistas Autoconvocados - La Plata
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto10.jpg"alt="PlazaVirtual">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">PlazaVirtual</p>
-                <p class="categoria">
-                  Feria de Artesanos y Manualistas Autoconvocados - La Plata
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto11.jpg"alt="PlazaVirtual">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">PlazaVirtual</p>
-                <p class="categoria">
-                  Feria de Artesanos y Manualistas Autoconvocados - La Plata
-                </p>
-             </div>
-          </div>
-          <div class="trabajo">
-             <div class="thumb">
-                <img src="assets/img/foto12.jpg"alt="PlazaVirtual">
-             </div>
-             <div class="descripcion">
-                <p class="nombre">PlazaVirtual</p>
-                <p class="categoria">
-                  Feria de Artesanos y Manualistas Autoconvocados - La Plata
-                </p>
-             </div>
-          </div>
+          
        </div>
     </div>
  </section>
