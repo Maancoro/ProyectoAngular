@@ -5,3 +5,9 @@ li i {
     
     color: #fff;
 }
+.list-group{
+    --bs-list-group-bg: #transparent;
+}
+.list-group{
+--bs-list-group-border-color: none; 
+}

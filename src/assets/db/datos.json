@@ -11,34 +11,43 @@
       "ciudad":"La Plata",
       "pais":"Argentina",
       "idioma":"Inglés I, Español",
+      "title1":"Acerca de Mi",
+      "title2":"Información Básica",
       "copyright":" 2022 Portfolio - Angélica Correa",
       "logoAp":"../assets/img/APLogo.png",
       "logoInti":"assets/img/LogosInti.png",
+      "tituloProyectos":"Mis Proyectos",
+      "saludoProyectos":" Soy Programadora Full Stack Web Junior, estos son algunos de los trabajos que he realizado.",
+      
          
       
-      
+          
       "redes":[ 
    
       {
         "id":1,
         "red":"github",
-        "link":"https://github.com/"
+        "url":"https://github.com/",
+        "logo":"fa-brands fa-github fa-xl"
        
     },
     {
        "id":2,
         "red":"linkedin",
-        "link":"https://linkedin.com"
+        "url":"https://linkedin.com",
+        "logo":"fa-brands fa-linkedin fa-xl"
     },
     {
       "id":3,
         "red":"instagram",
-        "link":"https://www.instagram.com/"
+        "url":"https://www.instagram.com/",
+        "logo":"fa-brands fa-instagram fa-xl"
     },
     {
       "id":4,
         "red":"facebook",
-        "link":"https://www.facebook.com/"
+        "url":"https://www.facebook.com/",
+        "logo":"fa-brands fa-facebook fa-xl"
     }
  
     ],
@@ -163,7 +172,94 @@
 
           }
           
+        ],
+        "Proyectos":[
+          {
+            "id":1,
+            "imagen":"./assets/img/foto 1.jpg",
+            "nombreCliente":"Alma de Gaucho",
+            "descripcion":"Productos Regionales Argentinos - Para Adultos y Niños -  Envios Nacionales e Internacionales"
+                  
+          },
+          {
+            "id":2,
+            "imagen":"./assets/img/foto2.jpg",
+            "nombreCliente":"Alma de Gaucho",
+            "descripcion":"Productos Regionales Argentinos - Para Adultos y Niños -  Envios Nacionales e Internacionales"
+                  
+          },
+          {
+            "id":3,
+            "imagen":"./assets/img/foto3.jpg",
+            "nombreCliente":"Alma de Gaucho",
+            "descripcion":"Productos Regionales Argentinos - Para Adultos y Niños -  Envios Nacionales e Internacionales"
+                  
+          },
+          {
+            "id":4,
+            "imagen":"./assets/img/foto4.png",
+            "nombreCliente":"Alma de Gaucho",
+            "descripcion":"Productos Regionales Argentinos - Para Adultos y Niños -  Envios Nacionales e Internacionales"
+                  
+          },
+          {
+            "id":5,
+            "imagen":"./assets/img/foto5.jpg",
+            "nombreCliente":"Café Literario",
+            "descripcion":"Amar tomar un Café y Amar leer un Libro "
+                   
+          },
+           {
+            "id":6,
+            "imagen":"./assets/img/foto6.jpg",
+            "nombreCliente":"Café Literario",
+            "descripcion":"Amar tomar un Café y Amar leer un Libro "
+                   
+          },
+          {
+            "id":7,
+            "imagen":"./assets/img/foto7.jpg",
+            "nombreCliente":"Café Literario",
+            "descripcion":"Amar tomar un Café y Amar leer un Libro "
+                   
+          },
+          {
+            "id":8,
+            "imagen":"./assets/img/foto8.jpg",
+            "nombreCliente":"Café Literario",
+            "descripcion":"Amar tomar un Café y Amar leer un Libro "
+                   
+          },
+          {
+            "id":9,
+            "imagen":"./assets/img/foto9.jpg",
+            "nombreCliente":"PlazaVirtual",
+            "descripcion":"Feria de Artesanos y Manualistas Autoconvocados - La Plata "
+                   
+          },
+           {
+            "id":10,
+            "imagen":"./assets/img/foto10.jpg",
+            "nombreCliente":"PlazaVirtual",
+            "descripcion":"Feria de Artesanos y Manualistas Autoconvocados - La Plata "
+                   
+          },
+           {
+            "id":11,
+            "imagen":"./assets/img/foto11.jpg",
+            "nombreCliente":"PlazaVirtual",
+            "descripcion":"Feria de Artesanos y Manualistas Autoconvocados - La Plata "
+                   
+          },
+          {
+            "id":12,
+            "imagen":"./assets/img/foto12.jpg",
+            "nombreCliente":"PlazaVirtual",
+            "descripcion":"Feria de Artesanos y Manualistas Autoconvocados - La Plata "
+                   
+          }
         ]
+        
       }
 
       

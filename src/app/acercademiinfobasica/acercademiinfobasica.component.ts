@@ -15,6 +15,8 @@ email: string = '';
 ciudad: string = '';
 pais: string = '';
 idioma: string = '';
+title1: string = '';
+title2: string = '';
 
   constructor(
      //Inyectar el servicio para tener acceso en la clase a los Metodos
@@ -33,6 +35,8 @@ idioma: string = '';
        this.pais=datos.pais;
        this.idioma=datos.idioma;
        this.email=datos.email;
+       this.title1=datos.title1;
+       this.title2=datos.title2;
       });
 
 }

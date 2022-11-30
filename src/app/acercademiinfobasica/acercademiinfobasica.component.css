@@ -7,7 +7,7 @@ section .acerca-de-mi {
     box-shadow: 0px 0px 15px rgba(0,0,0,.35);
  }
  
- .title{
+ .title1{
      color:#000;;    
      font-weight: 700;   
      font-size: 1.714em;
@@ -15,6 +15,14 @@ section .acerca-de-mi {
      margin-top: 40px;
      margin-bottom: 15px;
  }
+ .title2{
+    color:#000;;    
+    font-weight: 700;   
+    font-size: 1.714em;
+    line-height: 1.45em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
  section p {
      line-height:27px;
  } 
