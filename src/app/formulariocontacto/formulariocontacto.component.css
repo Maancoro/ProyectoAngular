@@ -59,3 +59,10 @@
  .contacto .formulario .boton:hover {
     background: #49C199;
  }
+ .error{
+    color:red
+  }
+  
+  .border-danger{
+    border-color: red;
+  }

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule}from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -45,13 +47,15 @@ import { FooterdashboardComponent } from './modalesdashboard/footerdashboard/foo
 import { MenuproyectosdashboardComponent } from './modalesdashboard/menuproyectosdashboard/menuproyectosdashboard.component';
 import { ProyectosrealizadosdashboardComponent } from './modalesdashboard/proyectosrealizadosdashboard/proyectosrealizadosdashboard.component';
 import { FormulariocontactodashboardComponent } from './modalesdashboard/formulariocontactodashboard/formulariocontactodashboard.component';
+import { FormulariocontactoComponent } from './formulariocontacto/formulariocontacto.component';
 import { SaludoproyectosdashboardComponent } from './modalesdashboard/saludoproyectosdashboard/saludoproyectosdashboard.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
-import { FormulariocontactoComponent } from './formulariocontacto/formulariocontacto.component';
+
 
 
 
 @NgModule({
+  
   declarations: [
     AppComponent,
     NavbarComponent,
@@ -93,15 +97,18 @@ import { FormulariocontactoComponent } from './formulariocontacto/formulariocont
     MenuproyectosdashboardComponent,
     ProyectosrealizadosdashboardComponent,
     FormulariocontactodashboardComponent,
+    FormulariocontactoComponent,
     SaludoproyectosdashboardComponent,
     Pagina404Component,
-    FormulariocontactoComponent,
+    
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule, 
+    ReactiveFormsModule 
 
   ],
   providers: [],
