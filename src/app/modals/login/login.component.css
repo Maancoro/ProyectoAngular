@@ -1,17 +1,29 @@
 /*Boton de LoginFooter */
-.btn-primary{
-    --bs-btn-bg: #14837f ; 
-    --bs-btn-active-bg: #49C199;
-    --bs-btn-hover-bg: #49C199;
-    --bs-btn-focus-shadow-rgb: #49C199;
-    --bs-btn-border-color: #49C199;
-    --bs-btn-hover-border-color:#49C199;
+.modal{
+   background-color: #14837f ; }
 
+btn-dark {
+    --bs-btn-bg:#14837f;
+    --bs-btn-hover-border-color:#49C199;
+    --bs-btn-active-bg:#49C199;
+    --bs-btn-hover-bg:#14837f;
+    --bs-btn-border-color:#14837f;
+    --bs-btn-active-shadow:#49C199;
+    --bs-btn-focus-shadow-rgb: #49C199;
 }
+
 .error{
     color:red
   }
+.border-success{
+  border-color:#14837f;
+}
   
-  .border-danger{
+.border-danger{
     border-color: red;
   }
+  .border-danger {
+    --bs-border-opacity: 2;
+    border-color: rgba(var(--bs-danger-rgb),var(--bs-border-opacity))!important;
+}
+

@@ -10,9 +10,9 @@ export class FooterComponent implements OnInit {
 //inicializar variable de instancia para almacenar los datos con los que trata el Servicio
 copyright: string = '';
 
-  constructor(private datosService: DatosService) { }
+constructor(private datosService: DatosService) { }
 
-  ngOnInit(): void {
+ngOnInit(): void {
     //Esto es almacenar en la variable de instancia los datos recuperados por el servicio?
       this.datosService.getDatos().subscribe(datos =>{
       console.log(datos);

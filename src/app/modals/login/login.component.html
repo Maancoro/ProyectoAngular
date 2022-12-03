@@ -8,26 +8,27 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
-    <div class="mb-3 row">
     <div class="col-sm-12">
-      <label for="email">Email: </label>                       
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required>
+    <label for="Email" class="col-sm-2 col-form-label">Email:</label>
+    <br>
+    <input type="email" formControlName="email" class="border-sucess"[class.border-danger]="MailValid">
     </div>
     <!--Gracias al getter que  configuramos en el controlador-->
     <div *ngIf="Mail?.errors  && Mail?.touched">    
       <p *ngIf="Mail?.hasError('required')" class="error">
-          "El email es requerido.
+          "El email es requerido"
       </p>
       <p *ngIf="Mail?.hasError('email')" class="error">
-          El formato del email debe ser válido.
+          "El formato del email no es válido"
       </p>
      </div>
-    </div>
-    <div class="mb-3 row">
+     <br>
     
+    <div class="mb-3 row">
     <div class="col-sm-12">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>  
-    <input type="password" class="form-control" id="inputPassword"required>
+    <label for="exampleInputPassword1" class="form-label">Password: </label>
+    <br>
+    <input type="password" formControlName="password"[class.border-danger]="PasswordValid"> 
     </div>
     <div *ngIf="Password?.errors  && Password?.touched">
       <p *ngIf="Password?.hasError('required')" class="error">
@@ -37,11 +38,12 @@
     </div>
     </div>
     <div class="modal-footer">
-    <button type="button" class="btn btn-primary"data-bs-dismiss="modal"> Iniciar Sesion</button>
+      <button class="btn btn-primary"  type="submit">Iniciar Sesión</button>
     </div>
     </div>
     </div>
     </div>
     </form>
+  
    
   

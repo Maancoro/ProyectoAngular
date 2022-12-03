@@ -1,0 +1,10 @@
+.error{
+    color:red
+  }
+  
+  .border-danger{
+    border-color: red;
+  }
+  .row{
+    padding-right: 1rem;
+  }

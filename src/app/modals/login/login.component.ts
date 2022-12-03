@@ -17,8 +17,6 @@ export class LoginComponent implements OnInit {
       
    })
   }
-   
-
   ngOnInit(): void {}
   get Password(){
     return this.form.get("password");
@@ -33,7 +31,7 @@ export class LoginComponent implements OnInit {
   }
 
   get MailValid() {
-    return false
+   return this.Mail?.touched && !this.Mail?.valid;
   }
  
 

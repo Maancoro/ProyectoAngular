@@ -6,8 +6,8 @@
        <h3 class="titulo">Contacto</h3>
       <form class="formulario" action=""[formGroup]="form"  (ngSubmit)="onEnviar($event)">
           <input type="text"placeholder="Nombre" name="nombre" required>
-          
-          <input type="email" placeholder="Mail" formControlName="email">
+         
+          <input type="email" placeholder="Mail" formControlName="email"[class.border-danger]="MailValid">
           <div *ngIf="Mail?.errors  && Mail?.touched">    
             <p *ngIf="Mail?.hasError('required')" class="error"align="right">
                 "El email es requerido."
