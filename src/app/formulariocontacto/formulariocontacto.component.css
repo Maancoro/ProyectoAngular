@@ -1,64 +1,50 @@
-/*  Formulario de contacto*/
-.contacto {
-    padding: 60px 0;
+.form-container{
+	font:95% Arial,helvetica,sans-serif;
+	max-width: 700px;
+	padding: 16px;
+	margin: 10px auto;
+	background: #f7f7f7;
 }
-.contacto .titulo {
-     font-size: 36px;
-    line-height: 34px;
-    margin-bottom: 40px;
-    font-weight: 300;
-    color: #14837f;
-    text-align: center;
+.form-container h1{
+	background: #14837f ;
+	padding: 20px;
+	font-size: 50px;
+	font-weight: 300px;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
 
 }
-.contacto .formulario {     /*-- Aqui puedo usar Flexbox porque es el contenedor padre*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;     /*- Con space-beetween nos permite separar el espacio del formulario (entre cada elemento)*/
-
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea{
+	transition: all 0,30% ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
 }
-.contacto .formulario input[type="text"],
-.contacto .formulario input[type="email"],
-.contacto .formulario textarea {
-    border: 4px solid #cecece;
-    border-radius: 5px;
-    padding: 15px 20px;
-    font-size: 20px;
-    color: #a4a4a4;
+.form-container .btn-send {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background:#14837f;
+	border-bottom: 2% solid #30c29e;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	color: #fff;
+	font-size: 20px;
 }
-
-.contacto .formulario input[type="text"]:focus,
-.contacto .formulario input[type="email"]:focus,
-.contacto .formulario textarea:focus {
-   border: 3px solid #14837f !important;
+.form-container .btn-send:hover{
+	background: #2ebc99;
 }
-
-.contacto .formulario input[type="text"],
-.contacto .formulario input[type="email"] {
-    width: 49%;
-    margin-bottom: 15px;
-}
-.contacto .formulario textarea{
-    width: 100%;
-    height: 100px;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100px;    /*alto minimo*/
-    max-height: 300px;   /* alto maximo */ 
-    margin-bottom: 15px;   /*es la separacion entre el textarea y el boton enviar*/
-}
-.contacto .formulario .boton {
-    margin: auto;
-    background: #14837f;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 15px 40px;
-    cursor: pointer;
- }
- .contacto .formulario .boton:hover {
-    background: #49C199;
- }
  .error{
     color:red
   }

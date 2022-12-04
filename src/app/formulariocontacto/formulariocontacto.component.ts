@@ -13,27 +13,36 @@ export class FormulariocontactoComponent implements OnInit {
 constructor(private formBuilder: FormBuilder) {
        ///Creamos el grupo de controles para el formulario de login
        this.form= this.formBuilder.group({
+        name:['',[Validators.required]],
         email:['', [Validators.required, Validators.email]],
-        password:['',[Validators.required, Validators.minLength(8)]],
+        message:['',[Validators.required,Validators.minLength(12)]],
+       
         
      })
    }
 
   ngOnInit(): void {}
-  get Password(){
-    return this.form.get("password");
+
+  get Name(){
+    return this.form.get("name");
   }
  
   get Mail(){
    return this.form.get("email");
   }
+  get Message(){
+    return this.form.get("message");
+  }
 
-  get PasswordValid(){
-    return this.Password?.touched && !this.Password?.valid;
+  get NameValid(){
+    return this.Name?.touched && !this.Name?.valid;
   }
 
   get MailValid() {
-    return false
+       return this.Mail?.touched && !this.Mail?.valid;
+  }
+  get MessageValid(){
+    return this.Message?.touched && !this.Message?.valid;
   }
  
 
