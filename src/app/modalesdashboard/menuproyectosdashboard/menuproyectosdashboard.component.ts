@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-menuproyectosdashboard',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menuproyectosdashboard.component.css']
 })
 export class MenuproyectosdashboardComponent implements OnInit {
+  form: FormGroup;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) {
+    this.form= this.formBuilder.group({
+   })
+  }
 
   ngOnInit(): void {
   }

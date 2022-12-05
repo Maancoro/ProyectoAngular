@@ -13,7 +13,7 @@ export class FormulariocontactoComponent implements OnInit {
 constructor(private formBuilder: FormBuilder) {
        ///Creamos el grupo de controles para el formulario de login
        this.form= this.formBuilder.group({
-        name:['',[Validators.required]],
+        name:['',[Validators.required ]],
         email:['', [Validators.required, Validators.email]],
         message:['',[Validators.required,Validators.minLength(12)]],
        
