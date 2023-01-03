@@ -7,34 +7,20 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">Instagram</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">GitHub</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">Linkedin</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">Facebook</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
-    </div>
-    </div>
+      <label for="exampleDataList" class="form-label">Elegir Red</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Elegir Red">
+      <datalist id="datalistOptions">
+  <option value="Instagram">
+  <option value="GitHub">
+  <option value="Linkedin">
+  <option value="Facebook">
+      </datalist>
+      <br>
+      <label for="exampleDataList" class="form-label">Icono</label>
+      <input class="form-control form-control-sm" id="formFileSm" type="file">
+   </div>
     <div class="modal-footer">
     <button type="button" class="btn btn-primary">Guardar</button>
-  
     <button type="button" class="btn btn-primary">Borrar</button>
     </div>
     </div>
