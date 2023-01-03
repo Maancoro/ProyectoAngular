@@ -3,7 +3,7 @@
     
     <form class="formulario" action=""[formGroup]="form"  (ngSubmit)="onEnviar($event)">
      <input type="text" formControlName="name" placeholder="Tu Nombre" class="border-succes">
-     <div *ngIf="Name?.errors  && Name?.touched">    
+       <div *ngIf="Name?.errors  && Name?.touched">  
         <p *ngIf="Mail?.hasError('required')" class="error"align="right">
             "El nombre es requerido."
         </p>

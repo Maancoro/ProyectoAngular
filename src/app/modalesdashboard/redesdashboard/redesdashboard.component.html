@@ -1,4 +1,4 @@
-<form>
+<form [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
 <div class="modal fade" id="redesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
@@ -8,17 +8,31 @@
     </div>
     <div class="modal-body">
       <label for="exampleDataList" class="form-label">Elegir Red</label>
-      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Elegir Red">
+      <br>
+      <input type="text" list="datalistOptions" id="exampleDataList"
+      formControlName="red" placeholder="Red" class="border-sucess"[class.border-danger]="RedValid">
       <datalist id="datalistOptions">
-  <option value="Instagram">
-  <option value="GitHub">
-  <option value="Linkedin">
-  <option value="Facebook">
+        <option value="Instagram">
+        <option value="GitHub">
+        <option value="Linkedin">
+        <option value="Facebook">
       </datalist>
+      
       <br>
       <label for="exampleDataList" class="form-label">Icono</label>
-      <input class="form-control form-control-sm" id="formFileSm" type="file">
+      <br>
+      <input type="text" formControlName="url" placeholder="Url" class="border-sucess"[class.border-danger]="UrlValid">
    </div>
+   <div *ngIf="Red?.errors  && Red?.touched">    
+    <p *ngIf="Red?.hasError('required')" class="error">
+        Elija una Red
+    </p>
+  </div>
+   <div *ngIf="Url?.errors  && Url?.touched">    
+    <p *ngIf="Url?.hasError('required')" class="error">
+        Completar la Url
+    </p>
+  </div>
     <div class="modal-footer">
     <button type="button" class="btn btn-primary">Guardar</button>
     <button type="button" class="btn btn-primary">Borrar</button>
