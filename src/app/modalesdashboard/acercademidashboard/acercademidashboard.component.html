@@ -37,14 +37,12 @@
     
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Acerca de Mi</label>
-    <div class="col-sm-12">
-      <textarea name="acercaDeMi" placeholder="acercaDeMi" id="" cols="30" rows="10"></textarea>
-    </div>
-      <div *ngIf="Message?.errors  && Message?.touched">    
-        <p *ngIf="Message?.hasError('required')" class="error"align="right">
-            "Completar"
-        </p>
-      </div>
+    </div> <textarea formControlName="message" placeholder="Acerca de Mi"></textarea>
+    <div *ngIf="Message?.errors  && Message?.touched">    
+      <p *ngIf="Message?.hasError('required')" class="error"align="right">
+          "Completar Acerca de Mi"
+      </p>
+     
     </div>
    </div>
     <div class="modal-footer">

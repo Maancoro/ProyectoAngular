@@ -1,5 +1,5 @@
   <!--Educacion MODAL-->
-<form>
+  <form [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
   <div class="modal fade" id="educacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
@@ -11,7 +11,13 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Institucion</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="educacionInstitucion" type="text">
+      <input class="form-control form-control-sm border-sucess" [class.border-danger]="InstitucionValid">
+     
+    </div>
+    <div *ngIf="Institucion?.errors  && Institucion?.touched">    
+      <p *ngIf="Institucion?.hasError('required')" class="error">
+          "La institucion es requerida"
+      </p>
     </div>
     </div>
     <div class="mb-3 row">

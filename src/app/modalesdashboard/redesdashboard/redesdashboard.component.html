@@ -1,4 +1,4 @@
-<form [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
+<form [formGroup]="redes"  (ngSubmit)="onEnviar($event)">  
 <div class="modal fade" id="redesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
@@ -17,17 +17,17 @@
         <option value="Linkedin">
         <option value="Facebook">
       </datalist>
-      
+      <div *ngIf="red?.errors  && red?.touched">    
+        <p *ngIf="red?.hasError('required')" class="error">
+            Elija una Red
+        </p>
+      </div>
       <br>
       <label for="exampleDataList" class="form-label">Icono</label>
       <br>
       <input type="text" formControlName="url" placeholder="Url" class="border-sucess"[class.border-danger]="UrlValid">
    </div>
-   <div *ngIf="Red?.errors  && Red?.touched">    
-    <p *ngIf="Red?.hasError('required')" class="error">
-        Elija una Red
-    </p>
-  </div>
+   
    <div *ngIf="Url?.errors  && Url?.touched">    
     <p *ngIf="Url?.hasError('required')" class="error">
         Completar la Url
