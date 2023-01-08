@@ -185,6 +185,108 @@
           }
           
         ],
+        "lineas1":[
+          {
+            "id":1,
+            "seccion":"Redes",
+            "icono":"fa-solid fa-users fa-2xl",
+            "target":"#redesModal"
+          },
+          {
+            "id":2,
+            "seccion":"Perfil",
+            "icono":"fa-solid fa-image fa-2xl",
+            "target":"#perfilModal"
+          },
+           {
+            "id":3,
+            "seccion":"Carrusel",
+            "icono":"fa-solid fa-images fa-2xl",
+            "target":"#mainModal"
+          }
+        ],
+        "lineas2":[
+          {
+            "id":1,
+            "seccion":"Menu",
+            "icono":"fa-solid fa-bars fa-2xl",
+            "target":"#menuModal"
+          },
+          {
+            "id":2,
+            "seccion":"Acerca de Mi",
+            "icono":"fa-solid fa-comments fa-2xl",
+            "target":"#acercaDeMiModal"
+          },
+           {
+            "id":3,
+            "seccion":"Informacion Personal",
+            "icono":"fa-solid fa-circle-info fa-2xl",
+            "target":"#infoModal"
+          }
+        ],
+         "lineas3":[
+          {
+            "id":1,
+            "seccion":"Educacion",
+            "icono":"fa-solid fa-user-graduate fa-2xl",
+            "target":"#educacionModal"
+          },
+          {
+            "id":2,
+           "seccion":"Hard Skills",
+            "icono":"fa-solid fa-lightbulb fa-2xl",
+            "target":"#skillsModal"
+          },
+           {
+            "id":3,
+            "seccion":"Experiencia Laboral",
+            "icono":"fa-solid fa-briefcase fa-2xl",
+            "target":"#experienciaLaboralModal"
+          }
+        ],
+          "lineas4":[
+          {
+            "id":1,
+            "seccion":"Portfolio",
+            "icono":"fa-solid fa-user-graduate fa-2xl",
+            "target":"#educacionModal"
+          },
+          {
+            "id":2,
+            "seccion":"Footer",
+            "icono":"fa-solid fa-bars fa-2xl",
+            "target":"#footerModal"
+          },
+           {
+            "id":3,
+            "seccion":"Menu Trabajos",
+            "icono":"fa-solid fa-bars fa-2xl",
+            "target":"#menuTrabajosModal"
+          }
+        ],
+            "lineas5":[
+          {
+            "id":1,
+            "seccion":"Trabajos Realizados",
+            "icono":"fa-solid fa-image fa-2xl",
+            "target":"#trabajosModal"
+          },
+          {
+            "id":2,
+            "seccion":"Formulario Contacto",
+            "icono":"fa-solid fa-comments fa-2xl",
+            "target":"#contactoModal"
+          },
+           {
+            "id":3,
+            "seccion":"Saludo Pagina Trabajos",
+            "icono":"fa-solid fa-circle-info fa-2xl",
+            "target":"#misTrabajosModal"
+          }
+        ],
+
+
         "proyectos":[
           {
             "id":1,

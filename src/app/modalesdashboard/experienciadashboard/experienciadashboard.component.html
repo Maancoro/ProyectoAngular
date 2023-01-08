@@ -1,5 +1,5 @@
  <!--Experiencia Laboral MODAL-->
- <form>
+ <form [formGroup]="experiencia"  (ngSubmit)="onEnviar($event)">  
  <div class="modal fade" id="experienciaLaboralModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
@@ -11,30 +11,51 @@
       <div class="mb-3 row">
         <label for="formFileSm" class="form-label">Empresa</label>
       <div class="col-sm-12">
-        <input class="form-control form-control-sm" id="experienciaEmpresa" type="text"placeholder="Nombre Empresa">
+        <input class="form-control form-control-sm" id="experienciaEmpresa" type="text"placeholder="Nombre Empresa"[class.border-danger]="EmpresaValid">
+      </div>
+      <div *ngIf="empresa?.errors  && empresa?.touched">    
+        <p *ngIf="empresa?.hasError('required')" class="error">
+            "La Empresa es requerida"
+        </p>
       </div>
       </div>
       <div class="mb-3 ">
         <label for="experienciaPeriodoInicio" class="form-label">Periodo Inicio</label>
-        <input  type="date" class="form-control form-control" id="experienciaInicio">
+        <input  type="date" class="form-control form-control" id="experienciaInicio"[class.border-danger]="InicioValid">
+      </div>
+      <div *ngIf="inicio?.errors  && inicio?.touched">    
+        <p *ngIf="inicio?.hasError('required')" class="error">
+            "Coloque periodo inicio"
+        </p>
       </div>
       <div class="mb-3 ">
         <label for="experienciaPeriodoFin" class="form-label">Periodo Fin</label>
-        <input  type="date" class="form-control form-control" id="experienciaFin">
+        <input  type="date" class="form-control form-control" id="experienciaFin"[class.border-danger]="FinValid">
+      </div>
+      <div *ngIf="fin?.errors  && fin?.touched">    
+        <p *ngIf="fin?.hasError('required')" class="error">
+            "Coloque periodo fin"
+        </p>
       </div>
       <div class="mb-3 row">
         <label for="formFileSm" class="form-label">Cargo</label>
       <div class="col-sm-12">
-        <input class="form-control form-control-sm" id="experienciaCargo" type="text" placeholder="Nombre Cargo">
+        <input class="form-control form-control-sm" id="experienciaCargo" type="text" placeholder="Nombre Cargo"[class.border-danger]="CargoValid">
       </div>
+    </div>
+    <div *ngIf="cargo?.errors  && cargo?.touched">    
+      <p *ngIf="cargo?.hasError('required')" class="error">
+          "El Cargo es requerido"
+      </p>
+    </div>
       </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-primary">Guardar</button>
-      <button type="button" class="btn btn-primary">Borrar</button>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="submit" class="btn btn-primary">Borrar</button>
     </div>
     </div>
     </div>
-    </div>
+  
  </div>
 </form>
   

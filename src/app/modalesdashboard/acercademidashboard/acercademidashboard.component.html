@@ -8,7 +8,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
-    <div class="mb-3 row">
+    <div class="mb-12 row">
       <label for="formFileSm" class="form-label">Nombre y Apellido</label>
     <div class="col-sm-12">
       <input type="name" formControlName="name" class="border-sucess"[class.border-danger]="NameValid">
@@ -37,17 +37,17 @@
     
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Acerca de Mi</label>
-    </div> <textarea formControlName="message" placeholder="Acerca de Mi"></textarea>
+    </div> <textarea formControlName="message" placeholder="Acerca de Mi"[class.border-danger]="MessageValid"></textarea>
     <div *ngIf="Message?.errors  && Message?.touched">    
       <p *ngIf="Message?.hasError('required')" class="error"align="right">
-          "Completar Acerca de Mi"
+          "Completa este campo"
       </p>
-     
-    </div>
+     </div>
+  
    </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-primary">Guardar</button>
-      <button type="button" class="btn btn-primary">Borrar</button>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="submit" class="btn btn-primary">Borrar</button>
     </div>
     </div>
     </div>

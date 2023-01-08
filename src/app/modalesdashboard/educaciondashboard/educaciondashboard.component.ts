@@ -7,11 +7,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./educaciondashboard.component.css']
 })
 export class EducaciondashboardComponent implements OnInit {
-  form: FormGroup;
-  Institucion: any;
+  educacion: FormGroup;
+  
 
   constructor(private formBuilder: FormBuilder) { 
-    this.form= this.formBuilder.group({ 
+    this.educacion= this.formBuilder.group({ 
       institucion:['',[Validators.required]],
       anio:['',[Validators.required]],
       titulo:['',[Validators.required]],
@@ -20,30 +20,36 @@ export class EducaciondashboardComponent implements OnInit {
 
   ngOnInit(): void {}
   get institucion(){
-    return this.form.get("institucion");
+    return this.educacion.get("institucion");
   }
   get anio(){
-    return this.form.get("anio");
+    return this.educacion.get("anio");
   }
   get titulo(){
-    return this.form.get("titulo");
+    return this.educacion.get("titulo");
   }
 
   get InstitucionValid() {
-    return this.Institucion?.touched && !this.Institucion?.valid;
+    return this.institucion?.touched && !this.institucion?.valid;
+   }
+   get AnioValid() {
+    return this.anio?.touched && !this.anio?.valid;
+   }
+   get TituloValid() {
+    return this.titulo?.touched && !this.titulo?.valid;
    }
    
    onEnviar(event: Event){
     // Detenemos la propagación o ejecución del compotamiento submit de un form
     event.preventDefault; 
  
-    if (this.form.valid){
+    if (this.educacion.valid){
       // Llamamos a nuestro servicio para enviar los datos al servidor
       // También podríamos ejecutar alguna lógica extra
       alert("Todo salio bien ¡Enviar formulario!")
     }else{
       // Corremos todas las validaciones para que se ejecuten los mensajes de error en el template     
-      this.form.markAllAsTouched(); 
+      this.educacion.markAllAsTouched(); 
     }
   }
 }

@@ -1,3 +1,7 @@
+input {
+  width: 100%;
+  }
+
 .modal{
   background-color: #14837f ; }
 .error{

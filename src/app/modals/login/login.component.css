@@ -11,6 +11,9 @@ btn-dark {
     --bs-btn-active-shadow:#49C199;
     --bs-btn-focus-shadow-rgb: #49C199;
 }
+input {
+  width: 100%;
+  }
 
 .error{
     color:red
