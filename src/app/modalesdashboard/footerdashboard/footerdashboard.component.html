@@ -1,5 +1,5 @@
      <!--FooterMODAL-->
-     <form>
+     <form [formGroup]="footer"  (ngSubmit)="onEnviar($event)">  
      <div class="modal fade" id="footerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
@@ -11,19 +11,29 @@
           <div class="mb-3 row">
             <label for="inputPassword" class="col-sm-2 col-form-label">Año</label>
             <div class="col-sm-12">
-            <input type="password" class="form-control" id="inputPassword">
+            <input type="date"formControlName="anio" class="form-control border-sucess"[class.border-danger]="AnioValid" id="inputDate" >
+            </div>
+            <div *ngIf="Anio?.errors  && Anio?.touched">    
+              <p *ngIf="Anio?.hasError('required')" class="error">
+                  Seleccione fecha
+              </p>
             </div>
             </div>
         <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Nombre</label>
         <div class="col-sm-12">
-        <input type="password" class="form-control" id="inputPassword">
+        <input type="text"formControlName="name" class="form-control border-sucess"[class.border-danger]="NameValid" >
+        </div>
+        <div *ngIf="Name?.errors  && Name?.touched">    
+          <p *ngIf="Name?.hasError('required')" class="error">
+              Complete nombre
+          </p>
         </div>
         </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" >Guardar</button>
-          <button type="button" class="btn btn-primary" >Borrar</button>
+          <button type="submit" class="btn btn-primary" >Guardar</button>
+          <button type="submit" class="btn btn-primary" >Borrar</button>
         </div>
         </div>
         </div>

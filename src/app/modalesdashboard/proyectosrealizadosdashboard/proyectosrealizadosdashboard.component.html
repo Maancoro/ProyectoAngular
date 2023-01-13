@@ -1,5 +1,5 @@
  <!--Pagina de TrabajosRealizados MODAL-->
- <form>
+ <form [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
  <div class="modal fade" id="trabajosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
      <div class="modal-content">
@@ -10,26 +10,41 @@
       <div class="modal-body">
         <div class="modal-body">
           <div class="mb-3 row">
-            <label for="formFileSm" class="form-label">Foto</label>
+            <label for="formFileSm" class="form-label">Imagen</label>
           <div class="col-sm-12">
-            <input class="form-control form-control-sm" id="formFileSm" type="file">
+            <input class="form-control form-control-sm border-sucess"[class.border-danger]="UrlValid" id="formFileSm" type="file"formControlName="url">
+          </div>
+          <div *ngIf="Url?.errors  && Url?.touched">    
+            <p *ngIf="Url?.hasError('required')" class="error">
+                Completar la Url
+            </p>
           </div>
           </div>
           <div class="mb-3 row">
             <label for="formFileSm" class="form-label">Nombre Marca</label>
           <div class="col-sm-12">
-            <input class="form-control form-control-sm" id="formFileSm" type="text">
+            <input class="form-control form-control-sm border-sucess"[class.border-danger]="NameValid" id="formFileSm" type="text"formControlName="name">
+          </div>
+          <div *ngIf="Name?.errors  && Name?.touched">    
+            <p *ngIf="Name?.hasError('required')" class="error">
+                Nombre requerido
+            </p>
           </div>
           </div>
           <div class="mb-3 row">
             <label for="formFileSm" class="form-label">Descripcion</label>
           <div class="col-sm-12">
-            <input class="form-control form-control-sm" id="formFileSm" type="text">
+            <input class="form-control form-control-sm border-sucess"[class.border-danger]="DescripValid"id="formFileSm" type="text"formControlName="descrip">
+          </div>
+          <div *ngIf="Descrip?.errors  && Descrip?.touched">    
+            <p *ngIf="Descrip?.hasError('required')" class="error">
+                Complete descripcion
+            </p>
           </div>
           </div>
          <div class="modal-footer">
-               <button type="button" class="btn btn-primary">Guardar</button>
-               <button type="button" class="btn btn-primary">Borrar</button>
+               <button type="submit" class="btn btn-primary">Guardar</button>
+               <button type="submit" class="btn btn-primary">Borrar</button>
               </div>
              </div>
             </div>

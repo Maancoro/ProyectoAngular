@@ -11,7 +11,7 @@
       <div class="mb-3 row">
         <label for="formFileSm" class="form-label">Empresa</label>
       <div class="col-sm-12">
-        <input class="form-control form-control-sm" id="experienciaEmpresa" type="text"placeholder="Nombre Empresa"[class.border-danger]="EmpresaValid">
+        <input class="form-control form-control-sm" id="experienciaEmpresa" type="text"formControlName="empresa"placeholder="Nombre Empresa"[class.border-danger]="EmpresaValid">
       </div>
       <div *ngIf="empresa?.errors  && empresa?.touched">    
         <p *ngIf="empresa?.hasError('required')" class="error">
@@ -21,7 +21,7 @@
       </div>
       <div class="mb-3 ">
         <label for="experienciaPeriodoInicio" class="form-label">Periodo Inicio</label>
-        <input  type="date" class="form-control form-control" id="experienciaInicio"[class.border-danger]="InicioValid">
+        <input  type="date"formControlName="inicio" class="form-control form-control" id="experienciaInicio"[class.border-danger]="InicioValid">
       </div>
       <div *ngIf="inicio?.errors  && inicio?.touched">    
         <p *ngIf="inicio?.hasError('required')" class="error">
@@ -30,7 +30,7 @@
       </div>
       <div class="mb-3 ">
         <label for="experienciaPeriodoFin" class="form-label">Periodo Fin</label>
-        <input  type="date" class="form-control form-control" id="experienciaFin"[class.border-danger]="FinValid">
+        <input  type="date"formControlName="fin" class="form-control form-control" id="experienciaFin"[class.border-danger]="FinValid">
       </div>
       <div *ngIf="fin?.errors  && fin?.touched">    
         <p *ngIf="fin?.hasError('required')" class="error">
@@ -40,7 +40,7 @@
       <div class="mb-3 row">
         <label for="formFileSm" class="form-label">Cargo</label>
       <div class="col-sm-12">
-        <input class="form-control form-control-sm" id="experienciaCargo" type="text" placeholder="Nombre Cargo"[class.border-danger]="CargoValid">
+        <input class="form-control form-control-sm" id="experienciaCargo" type="text"formControlName="cargo" placeholder="Nombre Cargo"[class.border-danger]="CargoValid">
       </div>
     </div>
     <div *ngIf="cargo?.errors  && cargo?.touched">    
@@ -55,7 +55,6 @@
     </div>
     </div>
     </div>
-  
- </div>
+  </div>
 </form>
   

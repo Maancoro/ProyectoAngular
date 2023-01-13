@@ -10,14 +10,14 @@
 @media screen and (max-width:800px){
     
     .container img{
-        margin-top:20rem;
+        margin-top:30rem;
      }
      
  }
  @media screen and (max-width:500px){
      
     .container img{
-        margin-top: 20rem;
+        margin-top: 25rem;
      }
      
  }

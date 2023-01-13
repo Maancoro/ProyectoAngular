@@ -10,7 +10,7 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Foto perfil</label>
     <div class="col-sm-12">
-      <input type="file" class="border-sucess" [class.border-danger]="UrlValid">
+      <input type="file"formControlName="url" class="border-sucess" [class.border-danger]="UrlValid">
     </div>
     <div *ngIf="url?.errors  && url?.touched">    
       <p *ngIf="url?.hasError('required')" class="error">
@@ -22,7 +22,7 @@
       <label for="formFileSm" class="form-label">Nombre y Apellido</label>
 
     <div class="col-sm-12">
-      <input type="text" class="form-control form-control-sm border-sucess"[class.border-danger]="NyaValid" >
+      <input type="text" formControlName="nya" class="form-control form-control-sm border-sucess"[class.border-danger]="NyaValid" >
     </div>
     <div *ngIf="nya?.errors  && nya?.touched">    
       <p *ngIf="nya?.hasError('required')" class="error">
@@ -34,7 +34,7 @@
       <label for="formFileSm" class="form-label">Titulo</label>
 
     <div class="col-sm-12">
-      <input type="text" class="form-control form-control-sm border-sucess" [class.border-danger]="TituloValid">
+      <input type="text"formControlName="titulo" class="form-control form-control-sm border-sucess" [class.border-danger]="TituloValid">
     </div>
     <div *ngIf="titulo?.errors  && titulo?.touched">    
       <p *ngIf="titulo?.hasError('required')" class="error">

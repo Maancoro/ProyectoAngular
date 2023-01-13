@@ -1,55 +1,50 @@
 <!--Kills MODAL-->
-<form>
+<form [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
 <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
     <div class="modal-header">
-    <h4 class="modal-title" id="exampleModalLabel">Hard & Soft Skills</h4>
+    <h4 class="modal-title" id="exampleModalLabel">Skills</h4>
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body">
     <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">HTML</label>
+      <label for="formFileSm" class="form-label">Habilidad</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="HabilidadValid"  list="datalistOptionsHabilidades" 
+      type="text"formControlName="habilidad">
+    <datalist id="datalistOptionsHabilidades">
+        <option value="Html">
+        <option value="Css">
+        <option value="Sass">
+        <option value="Javascript">
+        <option value="Flexbox">
+        <option value="Bootstrap">
+    </datalist>
+</div>
+    <div *ngIf="Habilidad?.errors  && Habilidad?.touched">    
+      <p *ngIf="Habilidad?.hasError('required')" class="error">
+          Elija una Habilidad
+      </p>
     </div>
     </div>
     <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">CSS</label>
+      <label for="formFileSm" class="form-label">Porcentaje</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="PorcentajeValid" id="formFileSm" type="text"formControlName="porcentaje">
     </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">Javascript</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">SASS</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">Bootstrap</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="formFileSm" class="form-label">Flexbox</label>
-    <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
-    </div>
+    <div *ngIf="Porcentaje?.errors  && Porcentaje?.touched">    
+      <p *ngIf="Porcentaje?.hasError('required')" class="error">
+          Complete Porcentaje
+      </p>
     </div>
     </div>
     <div class="modal-footer">
-    <button type="button" class="btn btn-primary">Guardar</button>
-    <button type="button" class="btn btn-primary">Borrar</button>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="submit" class="btn btn-primary">Borrar</button>
     </div>
-    </div>
+   </div>
+   </div>
   </div>
 </div>
 </form>

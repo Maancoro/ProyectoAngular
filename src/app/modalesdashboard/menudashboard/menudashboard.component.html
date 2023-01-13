@@ -1,5 +1,5 @@
 <!--Menú MODAL-->
-<form>
+<form [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
 <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
@@ -11,31 +11,51 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Educacion</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm  border-sucess"[class.border-danger]="EduValid" id="formFileSm" type="text"formControlName="edu">
     </div>
+    <div *ngIf="edu?.errors  && edu?.touched">    
+        <p *ngIf="edu?.hasError('required')" class="error">
+            Educacion es requerida
+        </p>
+      </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Experiencia Laboral</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="ExpValid" id="formFileSm" type="text" formControlName="exp">
+    </div>
+    <div *ngIf="exp?.errors  && exp?.touched">    
+      <p *ngIf="exp?.hasError('required')" class="error">
+          Experiencia es requerida
+      </p>
     </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Skills</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="SkillValid" id="formFileSm" type="text"formControlName="skill">
+    </div>
+    <div *ngIf="skill?.errors  && skill?.touched">    
+      <p *ngIf="skill?.hasError('required')" class="error">
+          Skill es requerido
+      </p>
     </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Portfolio</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="PortfolioValid"id="formFileSm" type="text"formControlName="portfolio">
+    </div>
+    <div *ngIf="portfolio?.errors  && portfolio?.touched">    
+      <p *ngIf="portfolio?.hasError('required')" class="error">
+          Portfolio es requerido
+      </p>
     </div>
     </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-primary">Guardar</button>
-      <button type="button" class="btn btn-primary">Borrar</button>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="submit" class="btn btn-primary">Borrar</button>
     </div>
     </div>
     </div>

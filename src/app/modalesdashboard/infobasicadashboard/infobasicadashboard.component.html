@@ -1,5 +1,5 @@
  <!--Informacion Básica MODAL-->
- <form>
+ <form [formGroup]="form"  (ngSubmit)="onEnviar($event)"> 
  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
@@ -11,37 +11,66 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Edad</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="EdadValid" id="formFileSm" type="text"formControlName="edad">
     </div>
+    <div *ngIf="Edad?.errors  && Edad?.touched">    
+      <p *ngIf="Edad?.hasError('required')" class="error">
+          La Edad  es requerida.
+      </p>
+      </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Email</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="MailValid"  id="formFileSm" type="text"formControlName="mail">
+    </div>
+    <div *ngIf="Mail?.errors  && Mail?.touched">    
+      <p *ngIf="Mail?.hasError('required')" class="error">
+          El Mail es requerido.
+      </p>
+      <p *ngIf="Mail?.hasError('name')" class="error">
+          El Formato es Erroneo
+        </p>
     </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Telefono</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="TelValid" id="formFileSm" type="text"formControlName="tel">
     </div>
+    <div *ngIf="Tel?.errors  && Tel?.touched">    
+      <p *ngIf="Tel?.hasError('required')" class="error">
+          El Telefono es requerido.
+      </p>
+      </div>
     </div>
+    
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Ciudad y Pais</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="CypValid" id="formFileSm" type="text"formControlName="cyp">
     </div>
+    <div *ngIf="Cyp?.errors  && Cyp?.touched">    
+      <p *ngIf="Cyp?.hasError('required')" class="error">
+          Ciudad y Pais  es requerido.
+      </p>
+      </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Idiomas</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="IdiomaValid" id="formFileSm" type="text"formControlName="idioma">
     </div>
+    <div *ngIf="Idioma?.errors  && Idioma?.touched">    
+      <p *ngIf="Idioma?.hasError('required')" class="error">
+          Idioma es requerido.
+      </p>
+      </div>
     </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-primary">Guardar</button>
-      <button type="button" class="btn btn-primary">Borrar</button>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="submit" class="btn btn-primary">Borrar</button>
     </div>
     </div>
     </div>

@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './modals/login/login.component';
 import { RedesComponent } from './redes/redes.component';
-import { CarruselComponent } from './carrusel/carrusel.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { MenuComponent } from './menu/menu.component';
 import { AcercademiinfobasicaComponent } from './acercademiinfobasica/acercademiinfobasica.component';
@@ -35,7 +34,6 @@ import { FooterproyectosComponent } from './footerproyectos/footerproyectos.comp
 import { MaindashboardComponent } from './maindashboard/maindashboard.component';
 import { RedesdashboardComponent } from './modalesdashboard/redesdashboard/redesdashboard.component';
 import { PerfildashboardComponent } from './modalesdashboard/perfildashboard/perfildashboard.component';
-import { CarruseldashboardComponent } from './modalesdashboard/carruseldashboard/carruseldashboard.component';
 import { MenudashboardComponent } from './modalesdashboard/menudashboard/menudashboard.component';
 import { AcercademidashboardComponent } from './modalesdashboard/acercademidashboard/acercademidashboard.component';
 import { InfobasicadashboardComponent } from './modalesdashboard/infobasicadashboard/infobasicadashboard.component';
@@ -50,6 +48,8 @@ import { FormulariocontactodashboardComponent } from './modalesdashboard/formula
 import { FormulariocontactoComponent } from './formulariocontacto/formulariocontacto.component';
 import { SaludoproyectosdashboardComponent } from './modalesdashboard/saludoproyectosdashboard/saludoproyectosdashboard.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
+import { BannerComponent } from './banner/banner.component';
+import { BannerdashboardComponent } from './modalesdashboard/bannerdashboard/bannerdashboard.component';
 
 
 
@@ -61,7 +61,6 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     NavbarComponent,
     LoginComponent,
     RedesComponent,
-    CarruselComponent,
     PerfilComponent,
     MenuComponent,
     AcercademiinfobasicaComponent,
@@ -85,7 +84,6 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     MaindashboardComponent,
     RedesdashboardComponent,
     PerfildashboardComponent,
-    CarruseldashboardComponent,
     MenudashboardComponent,
     AcercademidashboardComponent,
     InfobasicadashboardComponent,
@@ -100,6 +98,8 @@ import { Pagina404Component } from './pagina404/pagina404.component';
     FormulariocontactoComponent,
     SaludoproyectosdashboardComponent,
     Pagina404Component,
+    BannerComponent,
+    BannerdashboardComponent,
     
   
   ],

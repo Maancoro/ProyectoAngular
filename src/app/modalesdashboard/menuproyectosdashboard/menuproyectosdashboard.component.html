@@ -1,5 +1,5 @@
 <!--Menu PaginaTrabajosModal-->
-<form>
+<form [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
 <div class="modal fade" id="menuTrabajosModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
@@ -11,25 +11,40 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Inicio</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="inicioValid" id="formFileSm" type="text"formControlName="inicio">
+    </div>
+    <div *ngIf="inicio?.errors  && inicio?.touched">    
+      <p *ngIf="inicio?.hasError('required')" class="error">
+          Complete el campo
+      </p>
     </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Trabajos</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="trabajoValid" id="formFileSm" type="text"formControlName="trabajo">
+    </div>
+    <div *ngIf="trabajo?.errors  && trabajo?.touched">    
+      <p *ngIf="trabajo?.hasError('required')" class="error">
+          Completar trabajo
+      </p>
     </div>
     </div>
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Contacto</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="formFileSm" type="text">
+      <input class="form-control form-control-sm border-sucess"[class.border-danger]="contactoValid" id="formFileSm" type="text"formControlName="contacto">
+    </div>
+    <div *ngIf="contacto?.errors  && contacto?.touched">    
+      <p *ngIf="contacto?.hasError('required')" class="error">
+          Completar campo
+      </p>
     </div>
     </div>
    
     <div class="modal-footer">
-    <button type="button" class="btn btn-primary" >Guardar</button>
-    <button type="button" class="btn btn-primary" >Borrar</button>
+    <button type="submit" class="btn btn-primary" >Guardar</button>
+    <button type="submit" class="btn btn-primary" >Borrar</button>
     </div>
     </div>
     </div>

@@ -2,61 +2,36 @@
     <section id="panel" class="panel">
       <div class="container text-center">
           <div class="row mt-3 g-2 g-lg-3">
-            <div class="col">
-              <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#redesModal"data-bs-toggle="modal" ><i class="fa-solid fa-users fa-2xl"></i></button></div>
+            <div class="col" *ngFor="let boton1 of botones1">
+              <div><button type="button" class="btn btn-dark btn-large p-5" [attr.data-bs-target]="boton1.target" data-bs-toggle="modal" ><i [ngClass]="boton1.icono"></i></button></div>
             </div>
-            <div class="col">
-              <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#perfilModal"data-bs-toggle="modal" ><i class="fa-solid fa-image fa-2xl"></i></button></div>
-            </div>
-            <div class="col">
-              <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#mainModal"data-bs-toggle="modal" ><i class="fa-solid fa-images fa-2xl"></i></button></div>
-            </div>
+            
           
           </div>
           <div class="row mt-3 g-2 g-lg-3">
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#menuModal"data-bs-toggle="modal" ><i class="fa-solid fa-bars fa-2xl"></i></button></div>
+              <div class="col" *ngFor="let boton2 of botones2">
+                <div><button type="button" class="btn btn-dark btn-large p-5" [attr.data-bs-target]="boton2.target" data-bs-toggle="modal" ><i  [ngClass]="boton2.icono"></i></button></div>
               </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#acercaDeMiModal"data-bs-toggle="modal" ><i class="fa-solid fa-comments fa-2xl"></i></button></div>
-              </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#infoModal"data-bs-toggle="modal" ><i class="fa-solid fa-circle-info fa-2xl"></i></button></div>
-              </div>
+              
             
             </div>
             <div class="row mt-3 g-2 g-lg-3">
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#educacionModal"data-bs-toggle="modal" ><i class="fa-solid fa-user-graduate fa-2xl"></i></button></div>
+              <div class="col" *ngFor="let boton3 of botones3">
+                <div><button type="button" class="btn btn-dark btn-large p-5" [attr.data-bs-target]="boton3.target" data-bs-toggle="modal" ><i  [ngClass]="boton3.icono"></i></button></div>
               </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#skillsModal"data-bs-toggle="modal" ><i class="fa-solid fa-lightbulb fa-2xl"></i></button></div>
-              </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#experienciaLaboralModal"data-bs-toggle="modal" ><i class="fa-solid fa-briefcase fa-2xl"></i></button></div>
-              </div>
+              
             </div>
             <div class="row mt-3 g-2 g-lg-3">
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#portfolioModal"data-bs-toggle="modal" ><i class="fa-solid fa-mug-hot fa-2xl"></i></button></div>
+              <div class="col" *ngFor="let boton4 of botones4">
+                <div><button type="button" class="btn btn-dark btn-large p-5" [attr.data-bs-target]="boton4.target" data-bs-toggle="modal" ><i  [ngClass]="boton4.icono"></i></button></div>
               </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#footerModal"data-bs-toggle="modal" ><i class="fa-solid fa-bars fa-2xl"></i></button></div>
-              </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#menuTrabajosModal"data-bs-toggle="modal" ><i class="fa-solid fa-bars fa-2xl"></i></button></div>
-              </div>
+              
             </div>
             <div class="row mt-3 g-2 g-lg-3">
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#trabajosModal"data-bs-toggle="modal" ><i class="fa-solid fa-image fa-2xl"></i></button></div>
+              <div class="col" *ngFor="let boton5 of botones5">
+                <div><button type="button" class="btn btn-dark btn-large p-5" [attr.data-bs-target]="boton5.target" data-bs-toggle="modal" ><i  [ngClass]="boton5.icono"></i></button></div>
               </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#contactoModal"data-bs-toggle="modal" ><i class="fa-solid fa-comments fa-2xl"></i></button></div>
-              </div>
-              <div class="col">
-                <div><button type="button" class="btn btn-dark btn-large p-5" data-bs-target="#misTrabajosModal"data-bs-toggle="modal" ><i class="fa-solid fa-circle-info fa-2xl"></i></button></div>
-              </div>
+            
             
             </div>
         </div>
@@ -64,7 +39,7 @@
   </main>
 <app-redesdashboard></app-redesdashboard>
 <app-perfildashboard></app-perfildashboard>
-<app-carruseldashboard></app-carruseldashboard>
+<app-bannerdashboard></app-bannerdashboard>
 <app-menudashboard></app-menudashboard>
 <app-acercademidashboard></app-acercademidashboard>
 <app-infobasicadashboard></app-infobasicadashboard>

@@ -11,7 +11,7 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Institucion</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm border-sucess" [class.border-danger]="InstitucionValid">
+      <input class="form-control form-control-sm border-sucess" [class.border-danger]="InstitucionValid" type="text"formControlName="institucion">
      
     </div>
     <div *ngIf="institucion?.errors  && institucion?.touched">    
@@ -23,7 +23,7 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Año</label>
     <div class="col-sm-12">
-      <input  type="date" class="form-control form-control" id="educacionAño"[class.border-danger]="AnioValid">
+      <input  type="date"formControlName="anio" class="form-control form-control" id="educacionAño"[class.border-danger]="AnioValid">
     </div>
     <div *ngIf="anio?.errors  && anio?.touched">    
       <p *ngIf="anio?.hasError('required')" class="error">
@@ -34,7 +34,7 @@
     <div class="mb-3 row">
       <label for="formFileSm" class="form-label">Titulo</label>
     <div class="col-sm-12">
-      <input class="form-control form-control-sm" id="educacionTitulo" type="text"[class.border-danger]="TituloValid">
+      <input class="form-control form-control-sm" id="educacionTitulo" type="text"[class.border-danger]="TituloValid"type="text"formControlName="titulo">
     </div>
     <div *ngIf="titulo?.errors  && titulo?.touched">    
       <p *ngIf="titulo?.hasError('required')" class="error">

@@ -1,4 +1,8 @@
-.error{
+
+input {
+  width: 100%;
+  }
+  .error{
     color:red
   }
 .border-success{

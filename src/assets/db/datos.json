@@ -52,23 +52,12 @@
  
     ],
 
-        "carrusel":[ 
+        "banners":[ 
     {
        "id":1,
         "fondo":"../../assets/img/fondo1.jpg"
-        
-    },
-      {
-        "id":2,
-        "fondo":"../assets/img/fondo2.jpg"
-        
-       
-    },
-    {
-       "id":3,
-        "fondo":"../../assets/img/fondo3.jpg"
-       
-    }
+        }
+      
   ],
       
          "estudios":[
@@ -185,7 +174,8 @@
           }
           
         ],
-        "lineas1":[
+        
+        "botones1":[
           {
             "id":1,
             "seccion":"Redes",
@@ -200,12 +190,12 @@
           },
            {
             "id":3,
-            "seccion":"Carrusel",
+            "seccion":"Banner",
             "icono":"fa-solid fa-images fa-2xl",
             "target":"#mainModal"
           }
         ],
-        "lineas2":[
+          "botones2":[
           {
             "id":1,
             "seccion":"Menu",
@@ -218,14 +208,14 @@
             "icono":"fa-solid fa-comments fa-2xl",
             "target":"#acercaDeMiModal"
           },
-           {
+          {
             "id":3,
             "seccion":"Informacion Personal",
             "icono":"fa-solid fa-circle-info fa-2xl",
             "target":"#infoModal"
           }
         ],
-         "lineas3":[
+           "botones3":[
           {
             "id":1,
             "seccion":"Educacion",
@@ -238,20 +228,21 @@
             "icono":"fa-solid fa-lightbulb fa-2xl",
             "target":"#skillsModal"
           },
-           {
+              {
             "id":3,
             "seccion":"Experiencia Laboral",
             "icono":"fa-solid fa-briefcase fa-2xl",
             "target":"#experienciaLaboralModal"
           }
         ],
-          "lineas4":[
-          {
+            "botones4":[
+           {
             "id":1,
             "seccion":"Portfolio",
             "icono":"fa-solid fa-user-graduate fa-2xl",
             "target":"#educacionModal"
           },
+
           {
             "id":2,
             "seccion":"Footer",
@@ -265,27 +256,28 @@
             "target":"#menuTrabajosModal"
           }
         ],
-            "lineas5":[
+             "botones5":[
           {
             "id":1,
             "seccion":"Trabajos Realizados",
             "icono":"fa-solid fa-image fa-2xl",
             "target":"#trabajosModal"
           },
+
           {
             "id":2,
             "seccion":"Formulario Contacto",
             "icono":"fa-solid fa-comments fa-2xl",
             "target":"#contactoModal"
           },
-           {
+          {
             "id":3,
             "seccion":"Saludo Pagina Trabajos",
             "icono":"fa-solid fa-circle-info fa-2xl",
             "target":"#misTrabajosModal"
           }
         ],
-
+        
 
         "proyectos":[
           {

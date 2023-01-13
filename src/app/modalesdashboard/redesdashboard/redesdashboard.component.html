@@ -18,7 +18,7 @@
         <option value="Facebook">
       </datalist>
       <div *ngIf="red?.errors  && red?.touched">    
-        <p *ngIf="red?.hasError('required')" class="error">
+        <p *ngIf="red?.hasError('required')" class="error"align="right">
             Elija una Red
         </p>
       </div>
@@ -29,7 +29,7 @@
    </div>
    
    <div *ngIf="Url?.errors  && Url?.touched">    
-    <p *ngIf="Url?.hasError('required')" class="error">
+    <p *ngIf="Url?.hasError('required')" class="error"align="right">
         Completar la Url
     </p>
   </div>
