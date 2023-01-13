@@ -1,0 +1,17 @@
+input {
+    width: 100%;
+    }
+    .error{
+        color:red
+      }
+    .border-success{
+      border-color:#14837f;
+    }
+      
+    .border-danger{
+        border-color: red;
+      }
+      .border-danger {
+        --bs-border-opacity: 2;
+        border-color: rgba(var(--bs-danger-rgb),var(--bs-border-opacity))!important;
+    }

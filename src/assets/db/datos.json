@@ -18,6 +18,7 @@
       "logoInti":"../assets/img/LogosInti.png",
       "tituloProyectos":"Mis Proyectos",
       "saludoProyectos":" Soy Programadora Full Stack Web Junior, estos son algunos de los trabajos que he realizado.",
+      "imagenBanner":"../../assets/img/fondo1.jpg",
       
          
       
@@ -52,15 +53,7 @@
  
     ],
 
-        "banners":[ 
-    {
-       "id":1,
-        "fondo":"../../assets/img/fondo1.jpg"
-        }
-      
-  ],
-      
-         "estudios":[
+   "estudios":[
           {
             "id": 1,
             "institucion": "UMUPLA  Centro de Formación Profesional",

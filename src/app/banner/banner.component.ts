@@ -8,7 +8,7 @@ import { DatosService } from '../servicios/datos.service';
 })
 export class BannerComponent implements OnInit {
   //inicializar variable de instancia para almacenar los datos con los que trata el Servicio
-banners: any = []
+imagenBanner: any = []
 
 
   constructor(
@@ -19,7 +19,7 @@ banners: any = []
   ngOnInit(): void {
     this.datosService.getDatos().subscribe(datos =>{
       console.log(datos);
-      this.banners= datos.banners;
+      this.imagenBanner= datos.imagenBanner;
      }) 
   }
 
