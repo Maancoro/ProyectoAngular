@@ -34,17 +34,13 @@ import { FooterproyectosComponent } from './footerproyectos/footerproyectos.comp
 import { MaindashboardComponent } from './maindashboard/maindashboard.component';
 import { RedesdashboardComponent } from './modalesdashboard/redesdashboard/redesdashboard.component';
 import { PerfildashboardComponent } from './modalesdashboard/perfildashboard/perfildashboard.component';
-import { MenudashboardComponent } from './modalesdashboard/menudashboard/menudashboard.component';
 import { AcercademidashboardComponent } from './modalesdashboard/acercademidashboard/acercademidashboard.component';
 import { InfobasicadashboardComponent } from './modalesdashboard/infobasicadashboard/infobasicadashboard.component';
 import { EducaciondashboardComponent } from './modalesdashboard/educaciondashboard/educaciondashboard.component';
 import { SkilldashboardComponent } from './modalesdashboard/skilldashboard/skilldashboard.component';
 import { ExperienciadashboardComponent } from './modalesdashboard/experienciadashboard/experienciadashboard.component';
-import { PortfoliodashboardComponent } from './modalesdashboard/portfoliodashboard/portfoliodashboard.component';
 import { FooterdashboardComponent } from './modalesdashboard/footerdashboard/footerdashboard.component';
-import { MenuproyectosdashboardComponent } from './modalesdashboard/menuproyectosdashboard/menuproyectosdashboard.component';
 import { ProyectosrealizadosdashboardComponent } from './modalesdashboard/proyectosrealizadosdashboard/proyectosrealizadosdashboard.component';
-import { FormulariocontactodashboardComponent } from './modalesdashboard/formulariocontactodashboard/formulariocontactodashboard.component';
 import { FormulariocontactoComponent } from './formulariocontacto/formulariocontacto.component';
 import { SaludoproyectosdashboardComponent } from './modalesdashboard/saludoproyectosdashboard/saludoproyectosdashboard.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
@@ -84,17 +80,13 @@ import { BannerdashboardComponent } from './modalesdashboard/bannerdashboard/ban
     MaindashboardComponent,
     RedesdashboardComponent,
     PerfildashboardComponent,
-    MenudashboardComponent,
     AcercademidashboardComponent,
     InfobasicadashboardComponent,
     EducaciondashboardComponent,
     SkilldashboardComponent,
     ExperienciadashboardComponent,
-    PortfoliodashboardComponent,
     FooterdashboardComponent,
-    MenuproyectosdashboardComponent,
     ProyectosrealizadosdashboardComponent,
-    FormulariocontactodashboardComponent,
     FormulariocontactoComponent,
     SaludoproyectosdashboardComponent,
     Pagina404Component,
